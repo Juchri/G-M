@@ -10,6 +10,10 @@ h1 {
     font-weight:100;
     background-attachment: fixed;
     padding-top: 100px;
+    @media (max-width: 599px) {
+        font-size:5em;
+        padding-top: 0;
+        }
 }
 
 h1:hover {

@@ -3,18 +3,15 @@ a {
   color: black;
 }
 
-.img {
-  background-size: cover;
-  background-position: center;
-  height: 500px;
-  width: 100%;
-}
-
 .img-1 {
   background-image: url("../public/img/lieu/dessin-lieu.jpeg");
-  width: 80%;
   margin-right: auto;
   margin-left: auto;
+}
+@media (max-width: 599px) {
+  .img-1 {
+    background-size: contain;
+  }
 }
 
 a {
@@ -27,11 +24,20 @@ a {
   background-image: url("./public/img/lieu/dessin-lieu.jpeg");
   /* Set a specific height */
   min-height: 800px;
+  padding-top: 80px;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
-  background-position: center;
+  background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
+}
+@media (max-width: 599px) {
+  .parallax {
+    background-size: contain;
+    min-height: 350px;
+    background-attachment: unset;
+    padding-top: 0;
+  }
 }
 
 body {
@@ -46,6 +52,12 @@ h1 {
   font-weight: 100;
   background-attachment: fixed;
   padding-top: 100px;
+}
+@media (max-width: 599px) {
+  h1 {
+    font-size: 5em;
+    padding-top: 0;
+  }
 }
 
 h1:hover {
@@ -78,132 +90,6 @@ p {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   cursor: pointer;
-}
-
-.loader {
-  animation: 3000ms ease-in-out 0ms 1 both space-spin;
-  width: 100%;
-  height: 100%;
-  background-color: white;
-  position: fixed;
-  display: grid;
-  place-items: center center;
-  z-index: 5;
-  margin: auto;
-  left: 0px;
-  pointer-events: none;
-}
-.loader__spinner {
-  animation: 1500ms ease-in 0ms infinite both spin;
-  background: linear-gradient(#FF79DA, #9356DC);
-  width: 5em;
-  height: 5em;
-  border-radius: 100%;
-  margin: auto;
-}
-.loader__spinner:hover {
-  animation-play-state: paused;
-}
-.loader__spinner__white {
-  animation: 2000ms ease-in 0ms infinite both spin;
-  background-color: white;
-  width: 4em;
-  height: 4em;
-  border-radius: 100%;
-  margin: 0.5em;
-}
-
-.loader-menu {
-  animation: 1000ms ease-in-out 0ms 1 both space-spin;
-  width: 100%;
-  height: 100%;
-  background-color: white;
-  position: fixed;
-  display: grid;
-  place-items: center center;
-  z-index: 5;
-  margin: auto;
-  left: 0px;
-  pointer-events: none;
-}
-
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-@keyframes space-spin {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-.container-logo {
-  background-image: url("./public/img/logo/ohmyfood@2x.svg");
-  background-repeat: no-repeat;
-  align-self: center;
-  height: 40px;
-  background-position: center;
-}
-
-.header-menu {
-  background-image: url("./public/img/logo/ohmyfood@2x.svg");
-  background-repeat: no-repeat;
-  align-self: center;
-  height: 40px;
-  background-position: center;
-  display: flex;
-  height: 59px;
-}
-
-.return {
-  align-self: center;
-  padding-left: 15px;
-  font-size: 1.5em;
-}
-
-.header {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-}
-
-.localisation {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding: 10px;
-  background-color: #EAEAEA;
-  border-top: solid #CCCCCC;
-  box-shadow: 3px 3px 20px #DEDEDE;
-  margin: 0;
-}
-
-.search-input {
-  font-family: Roboto;
-  border: 0px #CECDCE solid;
-  background-color: #EAEAEA;
-  font-weight: bold;
-}
-
-.localisation-logo {
-  padding-right: 10px;
-  padding-left: 10px;
-}
-
-.description {
-  background-color: #F6F6F6;
-  margin: 0;
-  display: flex;
-  align-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding-bottom: 50px;
 }
 
 footer {
@@ -280,6 +166,14 @@ nav {
   margin: 0px;
   width: 100%;
   justify-content: space-around;
+}
+@media (max-width: 599px) {
+  #menu {
+    flex-direction: column;
+    margin-left: auto;
+    text-align: right;
+    padding-right: 20px;
+  }
 }
 
 .title-menu {
