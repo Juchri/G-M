@@ -65,36 +65,6 @@ p {
   font-family: "Retro";
   src: url("/retro_signature/RetroSignature.otf");
 }
-button {
-  font-family: "Roboto", sans-serif;
-  font-weight: bold;
-  font-size: 1em;
-  color: white;
-  align-items: center;
-  border-radius: 2ex;
-  background: linear-gradient(#FF79DA, #9356DC);
-  border: none;
-  box-shadow: 3px 3px 20px #dbdbdb;
-  text-align: center;
-  width: fit-content;
-  padding: 10px 20px 10px 20px;
-  align-self: center;
-  transform: scale(1);
-  transition: transform 400ms;
-}
-button:hover {
-  transform: scale(1.05);
-  opacity: 0.55;
-  box-shadow: 0px 8px 15px black;
-  cursor: pointer;
-}
-
-.order {
-  margin: 20px;
-  margin-bottom: 30px;
-  justify-content: center;
-}
-
 .favourite {
   border: none;
   background: none;
@@ -108,101 +78,6 @@ button:hover {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   cursor: pointer;
-}
-
-.menu__apparition {
-  animation: 600ms ease 0s 1 delayapparition;
-  animation-timing-function: ease-in-out;
-  animation-fill-mode: both;
-}
-
-@keyframes delayapparition {
-  0% {
-    opacity: 0;
-    transform: translate(100%, 0);
-  }
-  100% {
-    opacity: 1;
-    transform: translate(0, 0);
-  }
-}
-.apparition_1 {
-  animation-delay: 0.8s;
-}
-
-.apparition_2 {
-  animation-delay: 1.2s;
-}
-
-.apparition_3 {
-  animation-delay: 1.6s;
-}
-
-.apparition_4 {
-  animation-delay: 2s;
-}
-
-.apparition_5 {
-  animation-delay: 2.4s;
-}
-
-.apparition_6 {
-  animation-delay: 2.8s;
-}
-
-.apparition_7 {
-  animation-delay: 3.2s;
-}
-
-.apparition_8 {
-  animation-delay: 3.6s;
-}
-
-.apparition_9 {
-  animation-delay: 4s;
-}
-
-.apparition_10 {
-  animation-delay: 4.4s;
-}
-
-.category__food__colomn2__checkbox {
-  display: flex;
-  background-color: #99E2D0;
-  color: white;
-  border-radius: 0 20px 20px 0;
-  font-size: 1.3em;
-  font-weight: 300;
-  transition: transform 0.7s;
-  width: 0;
-  cursor: pointer;
-  position: relative;
-}
-
-.fa-check-circle {
-  margin: auto;
-  visibility: hidden;
-}
-
-.category__food:hover .fa-check-circle {
-  transition: transform 1000ms ease;
-  transform: rotate(360deg);
-  cursor: pointer;
-  visibility: visible;
-}
-
-.category__food:hover .category__food__colomn2__checkbox {
-  width: 3em;
-  transition: all 1s;
-  transform: translateX(0);
-}
-
-.category__food__colomn2__checkbox {
-  transition: all 1s;
-}
-
-.category__food__colomn2__checkbox::before {
-  box-sizing: border-box;
 }
 
 .loader {
@@ -369,93 +244,28 @@ footer {
   }
 }
 
-.restaurants {
-  background-color: #F6F6F6;
+.save {
+  background-color: #E1AB97;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
 }
 
-.menu {
-  display: flex;
-  flex-direction: column;
-  padding: 0 20px 50px 20px;
-}
-@media (min-width: 599px) {
-  .menu {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-}
-.menu__card {
-  display: flex;
-  flex-direction: column;
-  background: white;
-  border-radius: 3ex;
-  margin: 10px;
-  box-shadow: 3px 3px 20px #dbdbdb;
-  transform: scale(1);
-  transition: transform 400ms;
-}
-@media (min-width: 599px) {
-  .menu__card {
-    width: 45%;
-  }
-}
-@media (min-width: 1100px) {
-  .menu__card {
-    width: 23%;
-  }
-}
-.menu__card__cartel {
-  display: flex;
-}
-.menu__card__cartel__text {
-  display: flex;
-  flex-direction: column;
-  padding: 15px;
-  width: 90%;
-}
-.menu__card__cartel__text h4 {
-  font-size: 1.2em;
-  padding: 5px;
-  margin: 0;
-}
-.menu__card__cartel__text p {
-  font-size: 1.2em;
-  padding: 5px;
-  text-align: left;
+.save__first-line {
+  color: white;
+  font-weight: 500;
+  font-size: 3em;
+  font-variant-caps: small-caps;
+  padding: 0;
   margin: 0;
 }
 
-.menu__card:hover {
-  transform: scale(0.99);
-}
-
-.new {
-  background-color: #A9E0D1;
-  font-family: Roboto, Arial;
-  padding: 10px 15px 10px 15px;
-  color: #368C6F;
-  box-shadow: 3px 3px 20px #5D5D5D;
-  border-radius: 0.3ex;
-  display: flex;
-  margin: 20px;
-  height: fit-content;
-  margin-left: auto;
-  font-weight: 600;
-}
-
-.img-card {
-  border-radius: 3ex 3ex 0 0;
-  width: 100%;
-  display: flex;
-}
-
-.favourite {
-  margin-left: auto;
+.save__second-line {
+  color: white;
+  font-weight: 100;
   font-size: 2em;
-  font-weight: lighter;
-  align-content: center;
-  padding-right: 20px;
+  padding-top: 10px;
+  margin: 0;
 }
 
 nav {
