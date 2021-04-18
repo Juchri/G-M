@@ -13,11 +13,10 @@ a {
   /* The image used */
   background-image: url("./public/img/lieu/dessin-lieu.jpeg");
   /* Set a specific height */
-  min-height: 800px;
-  padding-top: 600px;
+  min-height: 900px;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
-  background-position: bottom;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -27,6 +26,7 @@ a {
     min-height: 350px;
     background-attachment: unset;
     padding-top: 0;
+    background-position: bottom;
   }
 }
 
