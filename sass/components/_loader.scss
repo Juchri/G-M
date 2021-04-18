@@ -1,0 +1,21 @@
+.carré-gris-container{
+   display:flex;
+   justify-content: space-between;
+   width:100%;
+   align-content: center;
+   flex-flow: row wrap;
+   padding:30px;
+}
+
+.carré-gris{
+    width:30%;
+    background-color: $colour-grey-light;
+    height:300px;
+    margin:10px;
+}
+
+.carré-gris:hover{
+    background-color: grey;
+    transition: 1s;
+}
+

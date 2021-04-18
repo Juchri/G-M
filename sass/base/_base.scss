@@ -4,19 +4,10 @@ a
     color: black;
 }
 
-.img-1{
-    background-image: url("../public/img/lieu/dessin-lieu.jpeg");
-    margin-right:auto;
-    margin-left:auto;
-    @media (max-width: 599px) {
-      background-size: contain;
-      }
+a {
+  text-decoration: none;
+  color: black;
 }
-
-  a {
-    text-decoration: none;
-    color: black;
-  }
 
 
 .parallax {
@@ -24,7 +15,7 @@ a
     background-image: url("./public/img/lieu/dessin-lieu.jpeg");
     /* Set a specific height */
     min-height: 800px;
-    padding-top:80px;
+    padding-top: 600px;
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: bottom;

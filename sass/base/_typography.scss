@@ -9,18 +9,20 @@ h1 {
     margin: 0;
     font-weight:100;
     background-attachment: fixed;
-    padding-top: 100px;
     @media (max-width: 599px) {
         font-size:5em;
         padding-top: 0;
         }
+}
+.names{
+    padding-top: 100px;
 }
 
 h1:hover {
     color:$salmon;
     font-weight: 200;
     transition: 0.3s;
-  }
+}
 
 p {
     font-family: 'Avenir', sans-serif;

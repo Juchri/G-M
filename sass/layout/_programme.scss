@@ -1,0 +1,63 @@
+.histoire__photo{
+    background-image: url("./public/img/photos/photo-n&b.jpeg");
+    min-height: 600px;
+    width:50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+.histoire
+{
+   display:flex;
+   flex-direction:row;
+   justify-content: space-around;
+   >p{
+    width: 40%;
+    text-align: justify;
+    margin-left:auto;
+    margin-right:auto;
+    }
+}
+
+.planning{
+  display:flex;
+  padding-top:20px;
+    &__container{
+        display:flex;
+        flex-direction: row;
+        text-align:center;
+        padding: 20px;
+        width: 100%;
+        justify-content: space-evenly;
+        &__place{
+            color: #5D5D5D;
+            >h2{
+                font-variant-caps:small-caps ;
+                }
+            >p{
+                font-size: 1em ;
+                line-height: 0.7;
+                }
+            &__lines{
+                display:flex;
+                flex-direction: column;
+                color: #5D5D5D;
+                text-align: center;
+                padding-bottom: 20px;
+                &__event{
+                    text-align:justify;
+                    padding-bottom:10px;
+                    padding-top:10px;
+                    text-align:center;
+                }
+            }
+        }
+    }
+}
+
+.fas{
+color:$salmon;
+font-size: 1.5em;
+width: 50px;
+  }

@@ -17,12 +17,14 @@ nav {
     padding-right: 20px;
     }
 }
-  
+
   .title-menu {
     padding: 40px 47px 0 47px;
     color:grey;
+    display:flex;
+    text-align: center;
   }
-  
+
   .title-menu:hover {
     color:#E1AB97;
   }
