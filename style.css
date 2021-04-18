@@ -63,7 +63,7 @@ p {
 
 @font-face {
   font-family: "Retro";
-  src: url("/retro_signature/RetroSignature.otf");
+  src: url("./retro_signature/RetroSignature.otf");
 }
 .favourite {
   border: none;
