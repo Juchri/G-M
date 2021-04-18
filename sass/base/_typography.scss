@@ -4,18 +4,20 @@ body {
 
 h1 {
     font-family: 'Retro', sans-serif;
-    font-size:10em;
+    font-size:8em;
     text-align: center;
     margin: 0;
     font-weight:100;
     background-attachment: fixed;
     @media (max-width: 599px) {
         font-size:5em;
-        padding-top: 0;
         }
 }
 .names{
     padding-top: 100px;
+    @media (max-width: 599px) {
+        padding-top: 0;
+        }
 }
 
 h1:hover {
