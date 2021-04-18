@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="fr">
   <head>
     <meta charset="utf-8" />
@@ -14,21 +13,21 @@
     ></script>
     <link rel="stylesheet" href="style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="img/favicon.ico">
   </head>
 
-  <body id="home">
+  <body>
+    
+        <?php
+    if (isset($_POST['mot_de_passe']) AND $_POST['mot_de_passe'] ==  "kangourou") // Si le mot de passe est bon
+    {
+    // On affiche les codes
+    ?>
+   <!DOCTYPE html>
 
     <!-- Header -->
     <header>
 
       <ul id="menu">
-        <li>
-            <a class="title-menu" href="./index.html" title="Accueil">
-              Accueil
-            </a>
-          </li>
-        <li>
         <li>
           <a class="title-menu" href="./programme.html" title="Le programme">
             Le programme
@@ -42,6 +41,16 @@
         <li>
           <a class="title-menu" href="./Plan.html" title="Plan d'accès">
             Plan d'accès
+          </a>
+        </li>
+        <li>
+          <a class="title-menu" href="./infos-pratiques.html" title="Infos pratiques">
+            Infos pratiques
+          </a>
+        </li>
+        <li>
+          <a class="title-menu" href="./Galerie photo.html" title="Galerie photo">
+            Galerie photo
           </a>
         </li>
         <li>
@@ -59,27 +68,26 @@
 
         <!-- Main -->
       <main>
-        <h1>Galerie photo</h1>
-        <p>
-            Un lien vers l'album photo HD arriver courant novembre.
-        </p>
-        <div class="carré-gris-container">
-            <div class="carré-gris carré-gris-1"></div>
-            <div class="carré-gris carré-gris-2"></div>
-            <div class="carré-gris carré-gris-3"></div>
-            <div class="carré-gris carré-gris-4"></div>
-            <div class="carré-gris carré-gris-5"></div>
-            <div class="carré-gris carré-gris-6"></div>
-            <div class="carré-gris carré-gris-7"></div>
-            <div class="carré-gris carré-gris-8"></div>
-            <div class="carré-gris carré-gris-9"></div>
+        <div class="img-1 img parallax ">
+          <h1 class="names">Garance & Maxime</h1>
+        </div>
+        <div class="save">
+          <p class="save__first-line">Save the date !</p>
+          <p class="save__second-line">02.10.21</p>
         </div>
       </main>
+
+       <!--Footer <footer>
+    </footer>-->
+    
+
+    }
+    else // Sinon, on affiche un message d'erreur
+    {
+        echo '<p>Mot de passe incorrect</p>';
+    }
+    ?>
+    
+        
     </body>
-  </html>
-
-
-
-
-
-
+</html>

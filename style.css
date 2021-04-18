@@ -49,7 +49,7 @@ h1 {
 }
 
 .names {
-  padding-top: 100px;
+  padding-top: 200px;
 }
 @media (max-width: 599px) {
   .names {
@@ -108,44 +108,6 @@ p {
 .carré-gris:hover {
   background-color: grey;
   transition: 1s;
-}
-
-footer {
-  background: #353535;
-  padding-bottom: 30px;
-}
-
-.logo--footer {
-  padding: 25px;
-}
-
-.line-footer {
-  padding: 10px 10px 10px 30px;
-  display: flex;
-  flex-direction: row;
-}
-@media (min-width: 599px) {
-  .line-footer {
-    padding: 10px 30px 10px 30px;
-  }
-}
-.line-footer h5 {
-  color: white;
-  margin: 0;
-}
-
-.icon-footer {
-  color: white;
-  width: 20px;
-  padding: 0 20px 0 0;
-}
-
-@media (min-width: 599px) {
-  .menu-footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
 }
 
 .save {
