@@ -1,0 +1,31 @@
+body {
+    font-family: 'Avenir', sans-serif;
+}
+
+h1 {
+    font-family: 'Retro', sans-serif;
+    font-size:10em;
+    text-align: center;
+    margin: 0;
+    font-weight:100;
+    background-attachment: fixed;
+    padding-top: 100px;
+}
+
+h1:hover {
+    color:#E1AB97;
+    font-weight: 200;
+    transition: 0.3s;
+  }
+
+p {
+    font-family: 'Avenir', sans-serif;
+    font-size:1.3em;
+    text-align: center;
+    color: $colour-dark-grey;
+}
+
+@font-face {
+	font-family: "Retro";
+	src: url('/retro_signature/RetroSignature.otf');
+}

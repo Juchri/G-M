@@ -1,0 +1,96 @@
+
+.menu__apparition {
+    animation: 600ms ease 0s 1 delayapparition;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+}
+
+@keyframes delayapparition{
+    0% {
+        opacity: 0;
+        transform: translate(100%, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+
+.apparition_1 {
+    animation-delay: 0.8s;
+}
+
+.apparition_2 {
+    animation-delay: 1.2s;
+}
+
+.apparition_3 {
+    animation-delay: 1.6s;
+}
+
+.apparition_4 {
+    animation-delay: 2s;
+}
+
+.apparition_5 {
+    animation-delay: 2.4s;
+}
+
+.apparition_6 {
+    animation-delay: 2.8s;
+}
+
+.apparition_7 {
+    animation-delay: 3.2s;
+}
+
+.apparition_8 {
+    animation-delay: 3.6s;
+}
+
+.apparition_9 {
+    animation-delay: 4s;
+}
+
+.apparition_10 {
+    animation-delay: 4.4s;
+}
+
+.category__food__colomn2__checkbox{
+    display: flex;
+    background-color: $colour-tertiary;
+    color: white;
+    border-radius: 0 20px 20px 0;
+    font-size: 1.3em;
+    font-weight: 300;
+    transition: transform 0.7s;
+    width: 0;
+    cursor: pointer;
+    position: relative;
+}
+
+.fa-check-circle{
+    margin: auto;
+    visibility:hidden;
+}
+
+.category__food:hover .fa-check-circle{
+    transition: transform 1000ms ease;
+    transform: rotate(360deg);
+    cursor: pointer;
+    visibility:visible;
+}
+
+.category__food:hover .category__food__colomn2__checkbox{
+    width: 3em;
+    transition: all 1s;
+    transform: translateX(0);
+}
+
+.category__food__colomn2__checkbox{
+    transition: all 1s;
+}
+
+.category__food__colomn2__checkbox::before{
+    box-sizing: border-box;
+}

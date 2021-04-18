@@ -1,0 +1,14 @@
+.favourite
+{
+    border: none;
+    background:none;
+    align-self: center;
+}
+
+.fa-heart:hover::before, .fa-heart:active::before {
+    background: linear-gradient($colour-primary, $colour-secondary);
+    font-weight: bold; /*background prend la forme du coeur*/
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+}
