@@ -1,9 +1,10 @@
 .save
 {
     background-color:$salmon;
+    height:300px;
     display:flex;
     flex-direction: column;
-    padding: 20px;
+    justify-content: center;
 }
 
 .save__first-line{
@@ -21,4 +22,45 @@
     font-size: 2em;
     padding-top:10px;
     margin:0;
+}
+
+.contact-container{
+    display:flex;
+    flex-direction:column;
+    padding-top: 50px;
+    height:300px;
+    >h2{
+        text-align:center;
+    }
+}
+.contact{
+    display:flex;
+    flex-direction:row;
+    text-align:center;
+    width: 50%;
+    margin-left:auto;
+    margin-right:auto;
+    &__info{
+        display:flex;
+        flex-direction:column;
+        width: 45%;
+        &__name{
+            font-size:1.3em;
+        }
+        &__mail{
+            color:grey;
+            font-size:1em;
+        }
+    }
+}
+
+.and{
+    font-family: 'Retro', sans-serif;
+    font-size: 2em;
+    color:$salmon;
+}
+
+.contact__info__mail:hover{
+    color: $salmon;
+    text-decoration: underline;
 }
