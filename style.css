@@ -90,8 +90,8 @@ p {
 }
 
 .map {
-  width: 600;
-  height: 450;
+  width: 100%;
+  height: 500px;
 }
 @media (max-width: 599px) {
   .map {
@@ -259,6 +259,8 @@ ol {
 }
 .planning__container__place {
   color: #5D5D5D;
+  width: 30%;
+  height: 800px;
 }
 .planning__container__place > h2 {
   font-variant-caps: small-caps;
