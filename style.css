@@ -365,6 +365,7 @@ ol {
 .wedding-list__article__text__price {
   color: grey;
   width: 30%;
+  text-align: right;
 }
 
 /*# sourceMappingURL=style.css.map */
