@@ -118,7 +118,7 @@ p {
 .carré-gris {
   width: 30%;
   background-color: #F6F6F6;
-  height: 100px;
+  height: 300px;
   margin: 10px;
 }
 @media (max-width: 599px) {
