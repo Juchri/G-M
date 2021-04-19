@@ -97,12 +97,25 @@ p {
   flex-flow: row wrap;
   padding: 30px;
 }
+@media (max-width: 599px) {
+  .carré-gris-container {
+    padding: 10px;
+    width: 90%;
+  }
+}
 
 .carré-gris {
   width: 30%;
   background-color: #F6F6F6;
-  height: 300px;
+  height: 100px;
   margin: 10px;
+}
+@media (max-width: 599px) {
+  .carré-gris {
+    width: 46%;
+    height: 150px;
+    margin: 10px 5px 10px 5px;
+  }
 }
 
 .carré-gris:hover {
@@ -185,17 +198,35 @@ ol {
   background-repeat: no-repeat;
   background-size: cover;
 }
+@media (max-width: 599px) {
+  .histoire__photo {
+    width: 100%;
+    min-height: 200px;
+  }
+}
 
 .histoire {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
+@media (max-width: 599px) {
+  .histoire {
+    flex-direction: column;
+  }
+}
 .histoire > p {
   width: 40%;
   text-align: justify;
   margin-left: auto;
   margin-right: auto;
+}
+@media (max-width: 599px) {
+  .histoire > p {
+    width: 80%;
+    font-size: 0.8em;
+    padding: 0%;
+  }
 }
 
 .planning {
@@ -210,6 +241,11 @@ ol {
   width: 100%;
   justify-content: space-evenly;
 }
+@media (max-width: 599px) {
+  .planning__container {
+    flex-direction: column;
+  }
+}
 .planning__container__place {
   color: #5D5D5D;
 }
@@ -219,6 +255,11 @@ ol {
 .planning__container__place > p {
   font-size: 1em;
   line-height: 0.7;
+}
+@media (max-width: 599px) {
+  .planning__container__place > p {
+    line-height: 1.2;
+  }
 }
 .planning__container__place__lines {
   display: flex;
