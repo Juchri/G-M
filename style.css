@@ -89,6 +89,17 @@ p {
   cursor: pointer;
 }
 
+.map {
+  width: 600;
+  height: 450;
+}
+@media (max-width: 599px) {
+  .map {
+    width: 100%;
+    height: 300px;
+  }
+}
+
 .carré-gris-container {
   display: flex;
   justify-content: space-between;
