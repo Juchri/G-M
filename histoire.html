@@ -71,6 +71,17 @@
         <!-- Main -->
       <main>
         <h1>Notre histoire</h1>
+        <div id="countdown">
+          <ul>
+            <li>
+              <span id="days"></span>
+              <div class="countdown-line">jours</div>
+            </li>
+            <li><span id="hours"></span>heures</li>
+            <li><span id="minutes"></span>minutes</li>
+            <li><span id="seconds"></span>secondes</li>
+          </ul>
+        </div>
         <div class="histoire">
             <div class="histoire__photo"></div>
               <p> Il était une fois, en plein hiver, quand les flocons descendaient du ciel comme des plumes et du duvet,
@@ -81,7 +92,7 @@
                 enfant aussi blanc que la neige, aussi vermeil que le sang et aussi noir de cheveux que l'ébène de
                 cette fenêtre !" Bientôt après, elle eut une petite fille qui était blanche comme la neige, vermeille
                 comme le sang et noire de cheveux comme le bois d'ébène, et Blanche-Neige fut son nom à cause de
-                cela....En attendant votre joli conte ! 
+                cela....En attendant votre joli conte !
               </p>
             </div>
           </div>
@@ -89,7 +100,43 @@
       </main>
       <footer>
     </footer>
-    </body>
+
+    <script>
+      (function () {
+      const second = 1000,
+      minute = second * 60,
+      hour = minute * 60,
+      day = hour * 24;
+
+let birthday = "Oct 02, 2021 11:00:00",
+    countDown = new Date(birthday).getTime(),
+    x = setInterval(function() {
+
+      let now = new Date().getTime(),
+          distance = countDown - now;
+
+        document.getElementById("days").innerText = Math.floor(distance / (day)),
+        document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
+        document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
+        document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
+
+      //do something later when date is reached
+      if (distance < 0) {
+        let headline = document.getElementById("headline"),
+            countdown = document.getElementById("countdown"),
+            content = document.getElementById("content");
+
+        headline.innerText = "";
+        countdown.style.display = "none";
+        content.style.display = "block";
+        clearInterval(x);
+      }
+      //seconds
+    }, 0)
+}());
+  </script>
+  
+  </body>
   </html>
 
 
