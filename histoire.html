@@ -73,10 +73,9 @@
         <h1>Notre histoire</h1>
         <div id="countdown">
           <ul>
-            <li>
-              <span id="days"></span>
-              <div class="countdown-line">jours</div>
-            </li>
+            <li><span id="years"></span>années</li>
+            <li><span id="months"></span>mois</li>
+            <li><span id="days"></span>jours</li>
             <li><span id="hours"></span>heures</li>
             <li><span id="minutes"></span>minutes</li>
             <li><span id="seconds"></span>secondes</li>
@@ -106,18 +105,22 @@
       const second = 1000,
       minute = second * 60,
       hour = minute * 60,
-      day = hour * 24;
+      day = hour * 24,
+      month = day * 30.417,
+      year = month * 11.9752112;
 
-let birthday = "Oct 02, 2021 11:00:00",
-    countDown = new Date(birthday).getTime(),
-    x = setInterval(function() {
+    const dayWeFellInLove = "Oct 02, 2014 11:00:00";
+    const dayWeFellInLoveInMilliseconds = new Date(dayWeFellInLove).getTime(); // la date en millisecondes
+    let x = setInterval(function() {
 
-      let now = new Date().getTime(),
-          distance = countDown - now;
+      const now = new Date().getTime();
+      const distance = now - dayWeFellInLoveInMilliseconds;
 
-        document.getElementById("days").innerText = Math.floor(distance / (day)),
-        document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
-        document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
+        document.getElementById("years").innerText = Math.floor(distance / (year));
+        document.getElementById("months").innerText = Math.floor((distance % (year)) / (month));
+        document.getElementById("days").innerText = Math.floor((distance % (month)) / (day));
+        document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour));
+        document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute));
         document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
 
       //do something later when date is reached
@@ -132,10 +135,10 @@ let birthday = "Oct 02, 2021 11:00:00",
         clearInterval(x);
       }
       //seconds
-    }, 0)
+    }, 1000)
 }());
   </script>
-  
+
   </body>
   </html>
 
