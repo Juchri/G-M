@@ -93,6 +93,61 @@
 
     <!-- Form contact -->
 
+
+      <div form-container>
+        <h2 class="title"> Questionnaire </h2>
+        <div class="container form">
+          <div class="form-line">
+            <label for="Nom" class="label-form">Nom </label>
+            <input type="text" name="Nom" id="userName" class="form-control" required/>
+          </div>
+          <div class="form-line">
+            <label for="Prénom" class="label-form">Prénom</label>
+            <input type="text" name="Prénom" id="userFirstName" class="form-control" required />
+          </div>
+          <div class="form-line">
+            <label for="Email" class="label-form">Email</label>
+            <input type="Email" name="Email" id="userEmail" class="form-control" required/>
+          </div>
+          <div class="form-line">
+            <label for="Number" class="label-form">Nombre de personnes</label>
+            <input type="number" name="number" id="userNumber" class="form-control" required/>
+          </div>
+          <div class="label-form form-line participation-option-container">
+            Participation au mariage :
+            <div class="participation-options">
+              <div>
+                <label class="checkboxed for="Cocktail"> Cocktail
+                  <input type="checkbox" name="Cocktail" id="userIsComingToCocktail" class="participation-option"/>
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+              <div>
+                <label class="checkboxed for="Diner"> Dîner
+                  <input type="checkbox" name="Dîner" id="userIsComingToDiner" class="participation-option"/>
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+              <div>
+                <label class="checkboxed for="Brunch"> Brunch 
+                  <input type="checkbox" name="Brunch" id="userIsComingToBrunch" class="participation-option"/>
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="form-line">
+            <label for="Message" class="label-form">Petit mot (optionnel)</label>
+            <textarea type="Message" name="Message" id="userMessage" class="form-control"></textarea>
+          </div>
+        <button id="submit" class=""> <i class="far fa-paper-plane"></i> </button>
+        </div>
+        <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-analytics.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-firestore.js"></script>
+        <script src ="app.js"></script>
+
+      </div>
       <div class="contact-container">
         <h2>Contact</h2>
         <div class="contact">
@@ -117,11 +172,7 @@
           </div>
         </div>
       </div>
-      <div>
-        <h1> Questionnaire </h1>
-        <div class="typeform-widget" data-url="https://form.typeform.com/to/iEYrtlxh?typeform-medium=embed-snippet" style="width: 100%; height: 500px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
-
-      </div>
+      <!-- <div class="typeform-widget" data-url="https://form.typeform.com/to/iEYrtlxh?typeform-medium=embed-snippet" style="width: 100%; height: 500px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script> -->
 
        <!--Footer-->
 
