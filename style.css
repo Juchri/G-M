@@ -152,7 +152,7 @@ p {
 #countdown > ul {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: space-around;
   font-variant-caps: small-caps;
   padding-left: 0;
@@ -197,7 +197,6 @@ p {
 #countdown-index > ul {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   justify-content: space-around;
   font-variant-caps: small-caps;
   padding-left: 0;
@@ -1040,6 +1039,7 @@ form:invalid {
   margin: 0;
   font-weight: 100;
   background-attachment: fixed;
+  padding-top: 80px;
 }
 @media (max-width: 599px) {
   .title {
