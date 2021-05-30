@@ -1,10 +1,22 @@
+
+@font-face {
+	font-family: "Notera";
+	src: url("./public/font/Notera_PersonalUseOnly.ttf");
+}
+
+@font-face {
+	font-family: "Priyati";
+	src: url("./public/font/Priyati-Regular.ttf");
+}
+
 body {
-    font-family: 'Avenir', sans-serif;
+    font-family: 'Priyati', 'Times', serif;
+    font-size: 2em;
 }
 
 h1 {
-    font-family: 'Retro', sans-serif;
-    font-size:8em;
+    font-family: 'Notera', sans-serif;
+    font-size: 4.5em;
     text-align: center;
     margin: 0;
     font-weight:100;
@@ -27,16 +39,12 @@ h1:hover {
 }
 
 p {
-    font-family: 'Avenir', sans-serif;
+    font-family: 'Priyati', sans-serif;
     font-size:1.3em;
     text-align: center;
     color: $colour-dark-grey;
 }
 
-@font-face {
-	font-family: "Retro";
-	src: url("./retro_signature/RetroSignature.otf");
-}
 
 .h2{
     color: $colour-dark-grey;

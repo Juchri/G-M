@@ -1,7 +1,7 @@
-.histoire__photo{
-    background-image: url("./public/img/photos/photo-n&b.jpeg");
+.prog-img{
+    background-image: url("/public/img/Photo\ M+G\ .JPG");
     min-height: 600px;
-    width:50%;
+    width:70%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -10,6 +10,12 @@
         min-height: 200px;
         }
   }
+
+.prog-container{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 
 .histoire
 {
@@ -20,7 +26,6 @@
     flex-direction:column;
     }
    >p{
-    width: 40%;
     text-align: justify;
     margin-left:auto;
     margin-right:auto;
@@ -32,23 +37,26 @@
     }
 }
 
+.prog__child{
+    margin-right: auto;
+    margin-left: auto;
+}
 
 .planning{
   display:flex;
   padding-top:20px;
+  flex-direction: column;
+  text-align: center;
     &__container{
         display:flex;
-        flex-direction: row;
+        flex-direction: column;
         text-align:center;
-        padding: 20px;
-        width: 100%;
         justify-content: space-evenly;
         @media (max-width: 599px) {
             flex-direction: column;
             }
         &__place{
             color: #5D5D5D;
-            width: 30%;
             @media (max-width: 599px) {
                 width: 100%;
                 height:500px;
@@ -80,12 +88,6 @@
     }
 }
 
-.height-program{
-height:400px;
-@media (max-width: 599px) {
-    height:300px;
-    }
-}
 
 .height-planning{
 height:800px;

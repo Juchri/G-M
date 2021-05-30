@@ -11,12 +11,12 @@ a {
 
 .parallax {
   /* The image used */
-  background-image: url("./public/img/lieu/dessin-lieu.jpeg");
+  background-image: url("./public/img/lieu/GARANCE-MAXIME.jpg");
   /* Set a specific height */
   min-height: 900px;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -30,13 +30,22 @@ a {
   }
 }
 
+@font-face {
+  font-family: "Notera";
+  src: url("./public/font/Notera_PersonalUseOnly.ttf");
+}
+@font-face {
+  font-family: "Priyati";
+  src: url("./public/font/Priyati-Regular.ttf");
+}
 body {
-  font-family: "Avenir", sans-serif;
+  font-family: "Priyati", "Times", serif;
+  font-size: 2em;
 }
 
 h1 {
-  font-family: "Retro", sans-serif;
-  font-size: 8em;
+  font-family: "Notera", sans-serif;
+  font-size: 4.5em;
   text-align: center;
   margin: 0;
   font-weight: 100;
@@ -64,16 +73,12 @@ h1:hover {
 }
 
 p {
-  font-family: "Avenir", sans-serif;
+  font-family: "Priyati", sans-serif;
   font-size: 1.3em;
   text-align: center;
   color: #5D5D5D;
 }
 
-@font-face {
-  font-family: "Retro";
-  src: url("./retro_signature/RetroSignature.otf");
-}
 .h2 {
   color: #5D5D5D;
   font-weight: 100;
@@ -833,19 +838,25 @@ p {
   margin: 10px;
 }
 
-.histoire__photo {
-  background-image: url("./public/img/photos/photo-n&b.jpeg");
+.prog-img {
+  background-image: url("/public/img/Photo M+G .JPG");
   min-height: 600px;
-  width: 50%;
+  width: 70%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 @media (max-width: 599px) {
-  .histoire__photo {
+  .prog-img {
     width: 100%;
     min-height: 200px;
   }
+}
+
+.prog-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .histoire {
@@ -859,7 +870,6 @@ p {
   }
 }
 .histoire > p {
-  width: 40%;
   text-align: justify;
   margin-left: auto;
   margin-right: auto;
@@ -872,16 +882,21 @@ p {
   }
 }
 
+.prog__child {
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .planning {
   display: flex;
   padding-top: 20px;
+  flex-direction: column;
+  text-align: center;
 }
 .planning__container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   text-align: center;
-  padding: 20px;
-  width: 100%;
   justify-content: space-evenly;
 }
 @media (max-width: 599px) {
@@ -891,7 +906,6 @@ p {
 }
 .planning__container__place {
   color: #5D5D5D;
-  width: 30%;
 }
 @media (max-width: 599px) {
   .planning__container__place {
@@ -923,15 +937,6 @@ p {
   padding-bottom: 10px;
   padding-top: 10px;
   text-align: center;
-}
-
-.height-program {
-  height: 400px;
-}
-@media (max-width: 599px) {
-  .height-program {
-    height: 300px;
-  }
 }
 
 .height-planning {
@@ -1033,7 +1038,7 @@ form:invalid {
 }
 
 .title {
-  font-family: "Retro", sans-serif;
+  font-family: "Notera", serif;
   font-size: 8em;
   text-align: center;
   margin: 0;

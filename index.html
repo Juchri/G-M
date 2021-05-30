@@ -29,8 +29,8 @@
       />
       <label for="top-nav" class="top-nav-label" id="top-nav-toggle">
         <span class="open-close-menu">
-          <span class="open-menu">Open menu</span>
-          <span class="close-menu">Close menu</span>
+          <span class="open-menu">Ouvrir le menu</span>
+          <span class="close-menu">Fermer le menu</span>
         </span>
       </label>
       <nav class="main-navigation">
@@ -41,23 +41,23 @@
             </a>
           </li>
           <li class="menu-item">
-            <a class="title-menu" href="./histoire.html" title="Notre histoire">
-              Notre histoire
-            </a>
-          </li>
-          <li class="menu-item">
-            <a class="title-menu" href="./programme.html" title="Le programme">
+            <a class="title-menu" href="#programme" title="Le programme">
               Le programme
             </a>
           </li>
           <li class="menu-item">
-            <a class="title-menu" href="./infos-pratiques.html" title="Infos pratiques">
-              Infos pratiques
+            <a class="title-menu" href="#rsvp" title="rsvp">
+              RSVP
             </a>
           </li>
           <li class="menu-item">
-            <a class="title-menu" href="./Galerie-photo.html" title="Galerie photo">
-              Galerie photo
+            <a class="title-menu" href="./infos-pratiques.html" title="Nous rejoindre">
+              Nous rejoindre
+            </a>
+          </li>
+          <li class="menu-item">
+            <a class="title-menu" href="#logements" title="Logements">
+             Logements
             </a>
           </li>
           <li class="menu-item">
@@ -73,11 +73,10 @@
       <main>
         <div class="img-1 img parallax ">
           <h1 class="names">Garance & Maxime</h1>
+          <a href="public/event/Mariage-Garance-Maxime.ics">
+          <h2>Samedi 2 octobre 2021</h2>
+          </a>
         </div>
-        <a class="save" href="public/event/Mariage-Garance-Maxime.ics">
-          <p class="save__first-line">Save the date !</p>
-          <p class="save__second-line">02.10.21</p>
-        </a>
       </main>
 
     <!-- Countdown -->
@@ -90,11 +89,54 @@
           <li><span id="seconds"></span>secondes</li>
         </ul>
       </div>
+    
+    <!-- Le programme -->
+
+    <section>
+      <h2 id="programme">Le programme</h2>
+      <div class= "prog-container">
+        <div class="prog-img"></div>
+        <div class="prog">
+          <div class= "prog__child">
+            <div class="planning">
+              <h2>Samedi 2 octobre 2021</h2>
+              <div class="planning__container">
+                <i class="fas fa-church"></i>
+                La cérémonie religieuse
+                <div class="planning__container__place">
+                  <p>16h - Église de Saint-Martin-des-Combes</p>
+                  <p>24456 Saint-Martin-des-Combes</p>
+                </div>
+                <div class="planning__container">
+                  <i class="fas fa-cocktail"></i>
+                  La réception
+                  <div class="planning__container__place height-program">
+                    <p>18h -  Domaine de la Fauconnie </p>
+                    <p>24140 Campsegret</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="planning">
+              <h2>Dimanche 3 octobre 2021</h2>
+              <div class="planning__container">
+                <i class="fas fa-coffee"></i>
+                Brunch du lendemain
+                <div class="planning__container__place height-program">
+                  <p>12h -  Domaine de la Fauconnie </p>
+                  <p> 24140 Campsegret</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Form contact -->
 
 
-      <div form-container>
+      <div id="rsvp">
         <h2 class="title"> Questionnaire </h2>
         <div class="container form">
           <div class="form-line">
@@ -148,6 +190,9 @@
         <script src ="app.js"></script>
 
       </div>
+
+<!-- -->
+
       <div class="contact-container">
         <h2>Contact</h2>
         <div class="contact">
@@ -172,8 +217,6 @@
           </div>
         </div>
       </div>
-      <!-- <div class="typeform-widget" data-url="https://form.typeform.com/to/iEYrtlxh?typeform-medium=embed-snippet" style="width: 100%; height: 500px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script> -->
-
        <!--Footer-->
 
       <footer>
