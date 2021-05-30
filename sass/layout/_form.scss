@@ -36,6 +36,11 @@ form:invalid{
     width: auto;
     padding-left: 40%;
     padding-bottom: 20px;
+    @media (max-width: 599px) {
+        padding-left: 0;
+        padding-bottom: 0;
+
+        }
 }
 
 .form-container{
@@ -49,6 +54,9 @@ form:invalid{
     flex-direction: column;
     justify-content: space-between;
     margin: auto;
+    @media (max-width: 599px) {
+        width: auto;
+        }
 }
 
 .participation-option-container{
