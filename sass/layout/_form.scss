@@ -2,19 +2,6 @@ form:invalid{
     background:red;
 }
 
-.title{
-    font-family: 'Notera', serif;
-    font-size:8em;
-    text-align: center;
-    margin: 0;
-    font-weight:100;
-    background-attachment: fixed;
-    padding-top: 80px;
-    @media (max-width: 599px) {
-        font-size:5em;
-        }
-}
-
 .label-form{
     font-size: 1.4em;
     color:$colour-dark-grey;
@@ -156,6 +143,7 @@ button{
 button:hover{
     background-color: $pink;
     cursor: pointer;
+    color: $salmon;
 
 }
 

@@ -27,3 +27,37 @@ a {
       background-position: bottom;
       }
   }
+
+  .img-liste{
+    background-image: url("/public/img/M+G\ Bateau.JPG");
+    min-height: 1000px;
+    width: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right:auto;
+    margin-left:auto;
+    @media (max-width: 599px) {
+        width:100%;
+        min-height: 200px;
+        }
+  }
+
+  .gift{
+    color: white;
+    text-align: center;
+    font-weight: 500;
+    padding: 10px 20px 10px 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 300px;
+    margin-top: 100px;
+  }
+
+  .list{
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  text-align:center;
+  width: auto;
+  }

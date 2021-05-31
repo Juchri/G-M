@@ -22,7 +22,7 @@ h1 {
     font-weight:100;
     background-attachment: fixed;
     @media (max-width: 599px) {
-        font-size:5em;
+        font-size:2em;
         }
 }
 .names{
@@ -46,9 +46,27 @@ p {
 }
 
 
-.h2{
+h2{
     color: $colour-dark-grey;
     font-weight: 100;
-    font-size: 2em;
-    text-align:center;
+    font-size: 3em;
+    text-align: center;
+    margin: 10px;
+    @media (max-width: 599px) {
+        font-size: 1em;
+        }
+}
+
+h3{
+    font-family: 'Notera', serif;
+    text-align: center;
+    font-size: 3em;
+    margin: 0;
+    font-weight:100;
+    background-attachment: fixed;
+    padding-top: 20px;
+    margin: 20px;
+    @media (max-width: 599px) {
+        font-size:2em;
+        }
 }
