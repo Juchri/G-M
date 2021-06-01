@@ -110,7 +110,7 @@ h1 {
 }
 
 h1:hover {
-  color: #486982;
+  color: #2D4D39;
   font-weight: 200;
   transition: 0.3s;
 }
@@ -248,7 +248,7 @@ h3 {
   }
 }
 #countdown > ul > li > span {
-  color: #486982;
+  color: #2D4D39;
   font-size: 3em;
 }
 @media (max-width: 599px) {
@@ -292,7 +292,7 @@ h3 {
   }
 }
 #countdown-index > ul > li > span {
-  color: #486982;
+  color: #2D4D39;
   font-size: 3em;
 }
 @media (max-width: 599px) {
@@ -302,7 +302,7 @@ h3 {
 }
 
 footer {
-  background-color: #486982;
+  background-color: #2D4D39;
   display: flex;
   flex-direction: column;
   padding-bottom: 100px;
@@ -320,7 +320,7 @@ footer > a {
 }
 
 .save {
-  background-color: #486982;
+  background-color: #2D4D39;
   height: 300px;
   display: flex;
   flex-direction: column;
@@ -380,7 +380,7 @@ footer > a {
 }
 
 .contact__info__mail:hover {
-  color: #486982;
+  color: #2D4D39;
 }
 
 .italic {
@@ -388,7 +388,7 @@ footer > a {
 }
 
 .salmon {
-  color: #486982;
+  color: #2D4D39;
   font-weight: 600;
 }
 
@@ -468,7 +468,7 @@ footer > a {
 
 .main-navigation .menu .menu-item a {
   background: white;
-  border: 0.0625rem solid #486982;
+  border: 0.0625rem solid #2D4D39;
   color: grey;
   display: block;
   padding: 0.809rem 1.618rem;
@@ -477,12 +477,12 @@ footer > a {
 
 .main-navigation .menu .menu-item a:hover,
 .main-navigation .menu .menu-item a:focus {
-  background: #486982;
+  background: #2D4D39;
   color: #efefef;
 }
 
 .main-navigation .menu .menu-item a:active {
-  background: #486982;
+  background: #2D4D39;
   color: #efefef;
 }
 
@@ -547,7 +547,7 @@ footer > a {
 }
 
 .site-header > .top-nav-label .open-close-menu {
-  background: #486982;
+  background: #2D4D39;
   border-radius: 0.1875rem;
   height: 0.25rem;
   left: 0.1875rem;
@@ -558,7 +558,7 @@ footer > a {
 
 .site-header > .top-nav-label .open-close-menu::before,
 .site-header > .top-nav-label .open-close-menu::after {
-  background-color: #486982;
+  background-color: #2D4D39;
   height: 0.25rem;
   left: 0;
   transition-duration: 0.3s, 0.3s;
@@ -601,7 +601,7 @@ footer > a {
 .site-header > .top-nav-label:hover,
 .site-header > input[type=checkbox]:focus ~ .top-nav-label,
 .site-header > input[type=checkbox]:hover ~ .top-nav-label {
-  background: #486982;
+  background: #2D4D39;
 }
 
 .site-header > .top-nav-label:hover .open-close-menu,
@@ -638,7 +638,7 @@ footer > a {
 
 .main-navigation .menu-item-has-children > .top-nav-label .open-close-menu::after,
 .main-navigation .menu-item-has-children > .top-nav-label .open-close-menu::before {
-  background: #486982;
+  background: #2D4D39;
   transition: transform 0.25s ease-out;
 }
 
@@ -674,11 +674,11 @@ footer > a {
 
 /* Plus/Minus button hover/focus/active */
 .main-navigation .menu-item-has-children > .top-nav-label:hover {
-  background: #486982;
+  background: #2D4D39;
 }
 
 .main-navigation .menu-item-has-children input[type=checkbox]:focus ~ .top-nav-label {
-  background: #486982;
+  background: #2D4D39;
 }
 
 .main-navigation .menu-item-has-children > .top-nav-label:hover .open-close-menu::after,
@@ -770,7 +770,7 @@ footer > a {
 
   .main-navigation .menu .menu-item a:hover {
     background: #fff;
-    color: #486982;
+    color: #2D4D39;
   }
 
   .main-navigation .menu .menu-item a:active {
@@ -991,7 +991,7 @@ footer > a {
 .planning__container > p {
   padding: 0;
   margin: 0;
-  color: #486982;
+  color: #2D4D39;
 }
 .planning__container__place {
   color: #5D5D5D;
@@ -1037,7 +1037,7 @@ footer > a {
 }
 
 .fas {
-  color: #486982;
+  color: #2D4D39;
   font-size: 1em;
   width: 50px;
   margin-left: auto;
@@ -1213,7 +1213,7 @@ form:invalid {
 
 /* When the checkbox is checked, add a blue background */
 .checkboxed input:checked ~ .checkmark {
-  background-color: #486982;
+  background-color: #2D4D39;
 }
 
 /* Create the checkmark/indicator (hidden when not checked) */
@@ -1242,7 +1242,7 @@ form:invalid {
 }
 
 button {
-  background-color: #486982;
+  background-color: #2D4D39;
   width: 10%;
   padding: 20px;
   border: none;
@@ -1256,9 +1256,9 @@ button > i {
 }
 
 button:hover {
-  background-color: #C9DDEE;
+  background-color: #C5DDCE;
   cursor: pointer;
-  color: #486982;
+  color: #2D4D39;
 }
 
 button:hover.i {
