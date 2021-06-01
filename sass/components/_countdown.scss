@@ -1,44 +1,10 @@
-#countdown
-{
-    margin-bottom:4rem;
-    @media (max-width: 599px) {
-        margin-bottom:2rem;
-        }
-    >ul{
-    display:flex;
-    flex-direction:row;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    font-variant-caps: small-caps;
-    padding-left:0;
-    @media (max-width: 599px) {
-        flex-flow: row wrap;
-        }
-        >li{
-            display:flex;
-            flex-direction:column;
-            justify-content: space-around;
-            font-size:2em;
-            text-align:center;
-            width:200px;
-            @media (max-width: 599px) {
-                font-size:1em;
-                padding:10px;
-                }
-            >span{
-                color:$salmon;
-                font-size:3em;
-                @media (max-width: 599px) {
-                    font-size:2em;
-                    }
-            }
-        }
-    }
-}
 
 #countdown-index
 {
     margin-top:4rem;
+    width: 80%;
+    margin-left:auto;
+    margin-right:auto;
     @media (max-width: 599px) {
         margin-top:2rem;
         }
@@ -64,7 +30,7 @@
                 }
             >span{
                 color:$salmon;
-                font-size:3em;
+                font-size:2em;
                 @media (max-width: 599px) {
                     font-size:2em;
                     }

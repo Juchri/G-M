@@ -16,9 +16,12 @@
     <link rel="stylesheet" href="style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <meta property="og:locale" content="fr_FR" />
     <meta property="og:title" content="Mariage Garance + Maxime">
-    <meta property="og:description" content="Mariage Garance + Maxime">
-    <meta property="og:image" href="./public/img/logo/+.png">
+    <meta property="og:description" content="Samedi 2 octobre 2021 - 16h ">
+    <meta property="og:image" content="https://garanceplusmaxime.fr/public/img/lieu/GARANCE-MAXIME.jpg">
+    <meta property="og:image:width" content="800" />
+    <meta property="og:image:height" content="400" />
     <meta property="og:url" content="https://garanceplusmaxime.fr/">
     <meta name="twitter:card" content="Mariage Garance + Maxime">
   </head>
@@ -27,7 +30,6 @@
 
     <!-- Header -->
 
-   
     <header class="site-header">
       <input
         type="checkbox"
@@ -50,7 +52,7 @@
           </li>
           <li class="menu-item">
             <a class="title-menu" href="./programme.html" title="Le programme">
-              Le programme
+              Programme
             </a>
           </li>
           <li class="menu-item">
@@ -65,7 +67,7 @@
           </li>
           <li class="menu-item">
             <a class="title-menu" href="./logements.html" title="Logements">
-             Logements
+             Se loger
             </a>
           </li>
           <li class="menu-item">
@@ -115,7 +117,7 @@
                 </label>
               </div>
               <div>
-                <label class="checkboxed for="Brunch"> Brunch 
+                <label class="checkboxed for="Brunch"> Brunch
                   <input type="checkbox" name="Brunch" id="userIsComingToBrunch" class="participation-option"/>
                   <span class="checkmark"></span>
                 </label>
@@ -148,40 +150,4 @@
         <a href="mailto:garanceplusmaxime@gmail.com"> garanceplusmaxime@gmail.com </a>
       </footer>
    </body>
-
-    <script>
-      (function () {
-      const second = 1000,
-      minute = second * 60,
-      hour = minute * 60,
-      day = hour * 24;
-
-    const weddingDay = "Oct 02, 2021 11:00:00";
-    const countDown = new Date(weddingDay).getTime();
-    x = setInterval(function() {
-
-      const now = new Date().getTime();
-      distance = countDown - now;
-
-        document.getElementById("days").innerText = Math.floor(distance / (day));
-        document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour));
-        document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute));
-        document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
-
-      //do something later when date is reached
-      if (distance < 0) {
-        let headline = document.getElementById("headline"),
-            countdown = document.getElementById("countdown"),
-            content = document.getElementById("content");
-
-        headline.innerText = "";
-        countdown.style.display = "none";
-        content.style.display = "block";
-        clearInterval(x);
-      }
-      //seconds
-    }, 1000)
-  }());
-  </script>
-
 </html>

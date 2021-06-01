@@ -236,53 +236,11 @@ button:hover.i {
   transition: 1s;
 }
 
-#countdown {
-  margin-bottom: 4rem;
-}
-@media (max-width: 599px) {
-  #countdown {
-    margin-bottom: 2rem;
-  }
-}
-#countdown > ul {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-around;
-  font-variant-caps: small-caps;
-  padding-left: 0;
-}
-@media (max-width: 599px) {
-  #countdown > ul {
-    flex-flow: row wrap;
-  }
-}
-#countdown > ul > li {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  font-size: 2em;
-  text-align: center;
-  width: 200px;
-}
-@media (max-width: 599px) {
-  #countdown > ul > li {
-    font-size: 1em;
-    padding: 10px;
-  }
-}
-#countdown > ul > li > span {
-  color: #2D4D39;
-  font-size: 3em;
-}
-@media (max-width: 599px) {
-  #countdown > ul > li > span {
-    font-size: 2em;
-  }
-}
-
 #countdown-index {
   margin-top: 4rem;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media (max-width: 599px) {
   #countdown-index {
@@ -317,7 +275,7 @@ button:hover.i {
 }
 #countdown-index > ul > li > span {
   color: #2D4D39;
-  font-size: 3em;
+  font-size: 2em;
 }
 @media (max-width: 599px) {
   #countdown-index > ul > li > span {
@@ -384,6 +342,7 @@ footer > a {
   justify-content: center;
   font-size: 1.2em;
   padding: 15px;
+  color: white;
 }
 @media (max-width: 599px) {
   .contact {
@@ -393,7 +352,7 @@ footer > a {
   }
 }
 .contact__info__mail {
-  color: grey;
+  color: whitesmoke;
   font-size: 1em;
   text-align: center;
   font-style: italic;
@@ -404,7 +363,7 @@ footer > a {
 }
 
 .contact__info__mail:hover {
-  color: #2D4D39;
+  color: #C5DDCE;
 }
 
 .italic {
@@ -1016,6 +975,23 @@ footer > a {
   padding: 0;
   margin: 0;
   color: #2D4D39;
+}
+.planning__container > h2 {
+  font-size: 1em;
+}
+.planning__container__title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.planning__container__title > .fas {
+  margin-top: auto;
+  margin-bottom: auto;
+  text-align: right;
+  font-size: 1em;
+}
+.planning__container__title > h3 {
+  margin: 1px;
 }
 .planning__container__place {
   color: #5D5D5D;

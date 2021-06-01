@@ -39,6 +39,7 @@
     justify-content: center;
     font-size: 1.2em;
     padding: 15px;
+    color: white;
     @media (max-width: 599px) {
         font-size: 1em;
         flex-direction:column;
@@ -46,7 +47,7 @@
         }
     &__info{
         &__mail{
-            color:grey;
+            color:whitesmoke;
             font-size:1em;
             text-align:center;
             font-style:italic
@@ -58,7 +59,7 @@
 }
 
 .contact__info__mail:hover{
-    color: $salmon;
+    color: $pink;
 }
 
 .italic{

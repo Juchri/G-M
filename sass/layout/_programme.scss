@@ -67,6 +67,24 @@
                 margin:0;
                 color:$salmon;
             }
+            >h2{
+                font-size: 1em;
+            }
+            &__title{
+                display:flex;
+                flex-direction: row;
+                justify-content: space-around;
+                >.fas{
+                    margin-top: auto;
+                    margin-bottom:auto;
+                    text-align:right;
+                    font-size:1em;
+                }
+                >h3{
+                    margin:1px;
+
+                }
+            }
         &__place{
             color: #5D5D5D;
             @media (max-width: 599px) {
