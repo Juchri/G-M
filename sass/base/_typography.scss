@@ -76,3 +76,30 @@ h3{
         font-size:2em;
         }
 }
+
+#submit{
+    background-color:$salmon;
+    width:10%;
+    padding: 20px;
+    border:none;
+    margin : 10px 10px 10px auto;
+    border-radius: 1em;
+    >i{
+        color:white;
+        font-size: 1.3em;
+        font-weight: 400;
+    }
+}
+
+#submit:hover{
+    background-color: $pink;
+    cursor: pointer;
+    color: $salmon;
+
+}
+
+
+//Chercher comment changer la couleur du i 
+button:hover.i{
+    color:$colour-dark-grey;
+}

@@ -152,6 +152,30 @@ h3 {
   }
 }
 
+#submit {
+  background-color: #2D4D39;
+  width: 10%;
+  padding: 20px;
+  border: none;
+  margin: 10px 10px 10px auto;
+  border-radius: 1em;
+}
+#submit > i {
+  color: white;
+  font-size: 1.3em;
+  font-weight: 400;
+}
+
+#submit:hover {
+  background-color: #C5DDCE;
+  cursor: pointer;
+  color: #2D4D39;
+}
+
+button:hover.i {
+  color: #5D5D5D;
+}
+
 .favourite {
   border: none;
   background: none;
@@ -1239,30 +1263,6 @@ form:invalid {
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
-}
-
-button {
-  background-color: #2D4D39;
-  width: 10%;
-  padding: 20px;
-  border: none;
-  margin: 10px 10px 10px auto;
-  border-radius: 1em;
-}
-button > i {
-  color: white;
-  font-size: 1.3em;
-  font-weight: 400;
-}
-
-button:hover {
-  background-color: #C5DDCE;
-  cursor: pointer;
-  color: #2D4D39;
-}
-
-button:hover.i {
-  color: #5D5D5D;
 }
 
 .join__line {
