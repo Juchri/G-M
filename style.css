@@ -114,6 +114,13 @@ p {
   text-align: center;
   color: #5D5D5D;
 }
+@media (max-width: 599px) {
+  p {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
 
 h2 {
   color: #5D5D5D;
@@ -132,7 +139,7 @@ h2 {
 h3 {
   font-family: "Notera", serif;
   text-align: center;
-  font-size: 3em;
+  font-size: 2em;
   margin: 0;
   font-weight: 100;
   background-attachment: fixed;
@@ -918,7 +925,7 @@ nav {
 
 .prog-img {
   background-image: url("/public/img/Photo M+G .JPG");
-  min-height: 600px;
+  min-height: 400px;
   width: 60%;
   background-position: center;
   background-repeat: no-repeat;
