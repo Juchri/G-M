@@ -76,6 +76,7 @@ a {
 }
 body {
   font-family: "Priyati", "Times", serif;
+  font-size: 1em;
 }
 @media (max-width: 599px) {
   body {
