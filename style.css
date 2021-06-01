@@ -76,7 +76,7 @@ a {
 }
 body {
   font-family: "Priyati", "Times", serif;
-  font-size: 1em;
+  font-size: 2em;
 }
 @media (max-width: 599px) {
   body {
@@ -125,7 +125,7 @@ p {
 h2 {
   color: #5D5D5D;
   font-weight: 100;
-  font-size: 3em;
+  font-size: 2em;
   text-align: center;
   margin: 10px;
 }
