@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Garance & Maxime</title>
+    <link href="./public/img/logo/+.png" rel="shortcut icon" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/27350ed8ab.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta property="og:title" content="Mariage Garance + Maxime">
+    <meta property="og:description" content="Mariage Garance + Maxime">
+    <meta property="og:image" href="./public/img/logo/+.png">
+    <meta property="og:url" content="https://garanceplusmaxime.fr/">
+    <meta name="twitter:card" content="Mariage Garance + Maxime">
+  </head>
+
+  <body>
+
+    <!-- Header -->
+
+    <header class="site-header">
+      <input
+        type="checkbox"
+        id="top-nav"
+        name="top-nav"
+        aria-labelledby="top-nav-toggle"
+      />
+      <label for="top-nav" class="top-nav-label" id="top-nav-toggle">
+        <span class="open-close-menu">
+          <span class="open-menu">Ouvrir le menu</span>
+          <span class="close-menu">Fermer le menu</span>
+        </span>
+      </label>
+      <nav class="main-navigation">
+        <ul class="menu">
+          <li class="menu-item">
+            <a class="title-menu" href="./index.html" title="Accueil">
+              <i class="fas fa-home"></i>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a class="title-menu" href="#programme" title="Le programme">
+              Le programme
+            </a>
+          </li>
+          <li class="menu-item">
+            <a class="title-menu" href="#rsvp" title="rsvp">
+              RSVP
+            </a>
+          </li>
+          <li class="menu-item">
+            <a class="title-menu" href="#nous-rejoindre" title="Nous rejoindre">
+              Nous rejoindre
+            </a>
+          </li>
+          <li class="menu-item">
+            <a class="title-menu" href="#logements" title="Logements">
+             Logements
+            </a>
+          </li>
+          <li class="menu-item">
+            <a class="title-menu" href="#liste-mariage" title="Liste de Mariage">
+              Liste de Mariage
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+        <!-- Main -->
+      <main>
+        <div class="img-1 img parallax ">
+          <h1 class="names">Garance + Maxime</h1>
+          <a href="public/event/Mariage-Garance-Maxime.ics">
+          <h2>Samedi 2 octobre 2021</h2>
+          </a>
+        </div>
+      </main>
+
+    <!-- Contact -->
+
+    <div class="contact">
+      <div class="contact__info">
+      Nous contacter :
+      </div>
+      <div class="space"></div>
+      <a class="contact__info__mail" href="mailto:garanceplusmaxime@gmail.com">
+        garanceplusmaxime@gmail.com
+      </a>
+    </div>
+
+    <!-- Countdown -->
+
+      <div id="countdown-index">
+        <ul>
+          <li><span id="days"></span>jours</li>
+          <li><span id="hours"></span>heures</li>
+          <li><span id="minutes"></span>minutes</li>
+          <li><span id="seconds"></span>secondes</li>
+        </ul>
+      </div>
+    
+    <!-- Le programme -->
+
+    <section>
+      <h3 id="programme">Le programme</h3>
+      <div class= "prog-container">
+        <div class="prog-img"></div>
+        <div class="prog">
+          <div class= "prog__child">
+            <div class="planning">
+              <h2>Samedi 2 octobre 2021</h2>
+              <div class="planning__container">
+                <i class="fas fa-church"></i>
+                <p>La cérémonie religieuse</p>
+                <div class="planning__container__place">
+                  <p>16h - Église de Saint-Martin-des-Combes</p>
+                  <p>24456 Saint-Martin-des-Combes</p>
+                </div>
+                <div class="planning__container">
+                  <i class="fas fa-cocktail"></i>
+                  <p>La réception</p>
+                  <div class="planning__container__place height-program">
+                    <p>18h -  Domaine de la Fauconnie </p>
+                    <p>24140 Campsegret</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="planning">
+              <h2>Dimanche 3 octobre 2021</h2>
+              <div class="planning__container">
+                <i class="fas fa-coffee"></i>
+                <p>Brunch du lendemain</p>
+                <div class="planning__container__place height-program">
+                  <p>12h -  Domaine de la Fauconnie </p>
+                  <p> 24140 Campsegret</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Form contact -->
+
+
+      <div id="rsvp">
+        <h3 class="title"> Votre réponse </h3>
+        <div class="container form">
+          <div class="form-line">
+            <label for="Nom" class="label-form">Nom </label>
+            <input type="text" name="Nom" id="userName" class="form-control" required/>
+          </div>
+          <div class="form-line">
+            <label for="Prénom" class="label-form">Prénom</label>
+            <input type="text" name="Prénom" id="userFirstName" class="form-control" required />
+          </div>
+          <div class="form-line">
+            <label for="Email" class="label-form">Email</label>
+            <input type="Email" name="Email" id="userEmail" class="form-control" required/>
+          </div>
+          <div class="form-line">
+            <label for="Number" class="label-form">Nombre de personnes</label>
+            <input type="number" name="number" id="userNumber" class="form-control" required/>
+          </div>
+          <div class="label-form form-line participation-option-container">
+            Participation au mariage :
+            <div class="participation-options">
+              <div>
+                <label class="checkboxed for="Cocktail"> Cocktail
+                  <input type="checkbox" name="Cocktail" id="userIsComingToCocktail" class="participation-option"/>
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+              <div>
+                <label class="checkboxed for="Diner"> Dîner
+                  <input type="checkbox" name="Dîner" id="userIsComingToDiner" class="participation-option"/>
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+              <div>
+                <label class="checkboxed for="Brunch"> Brunch 
+                  <input type="checkbox" name="Brunch" id="userIsComingToBrunch" class="participation-option"/>
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="form-line">
+            <label for="Message" class="label-form">Petit mot (optionnel)</label>
+            <textarea type="Message" name="Message" id="userMessage" class="form-control"></textarea>
+          </div>
+        <button id="submit" class=""> <i class="far fa-paper-plane"></i> </button>
+        </div>
+        <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-analytics.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-firestore.js"></script>
+        <script src ="app.js"></script>
+
+      </div>
+
+    <!-- Nous rejoindre -->
+
+    <section>
+      <h3 id="nous-rejoindre">Nous rejoindre</h3>
+        <div class= "join">
+          <div class="join__line">
+          Le domaine de la Fauconnie est situé au cœur de la Dordogne, à 1h30 de Bordeaux par la route.
+          </div>
+          <div class="join__types">
+            <div class= "join__types__explain">
+              <div class= "join__types__explain__container">
+                <i class="fas fa-plane"></i>
+                En avion
+                <div class="planning__container__place">
+                  <p>Aéroport International de Bergerac-Roumanière (Bruxelles-Charleroi) à 15 min </p>
+                  <p>Aéroport International de Bordeaux-Mérignac (Lille / Paris / Londres / Helsinki…) à 1h45 min </p>
+                  <p>Aéroport International de Toulouse-Blagnac à 2h50 min </p>
+                </div>
+              </div>
+            </div>
+            <div class= "join__types__explain">
+              <div class="join__types__explain__container">
+                <i class="fas fa-road"></i>
+                Par la route
+                <div class="planning__container__place">
+                  <p>De Bordeaux prendre la A89 sortie Mussidan direction Bergerac puis la N21 direction Périgueux (1h30)</p>
+                  <p>De Paris prendre la A10, A20 puis A89/E70 sortie Périgueux, puis la N21 direction Bergerac. (5h40)</p>
+                </div>
+              </div>
+            </div>
+            <div class= "join__types__explain">
+              <div class="join__types__explain__container">
+                <i class="fas fa-train"></i>
+                En train
+                <div class="planning__container__place">
+                  <p>TGV Paris-Bordeaux (2h) puis TER Bordeaux-Libourne-Bergerac (54 min) </p>
+                  <p>TGV Lille-Paris-Bordeaux (4h10) puis TER Bordeaux-Libourne-Bergerac (54 min)</p>
+                </div>
+              </div>
+            </div>
+            <div class= "join__types__explain">
+              <div class="join__types__explain__container">
+                <i class="fas fa-car"></i>
+                Location voiture
+                <div class="planning__container__place">
+                  <p>Europcar Bergerac gare et aéroport (13 à 15 min du lieu)
+                  <p> Avis / Sixt / Hertz / Rent a Car … gare et aéroport Bordeaux (1h30-1h45 du lieu)</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+     <!-- Liste des hôtels  -->
+
+     <section>
+      <h3 id="logements">Liste des logements à proximité</h3>
+        <div class= "join">
+          <div class="join__line">
+            Une navette vous sera mise à disposition durant la soirée.
+          </div>
+          <div class="join__line">
+            Nous vous signalerons les logements qui en bénéficieront dans les prochains jours.
+          </div>
+
+          <div class="join__types">
+
+            <div class= "join__types__explain">
+              <div class= "join__types__explain__container salmon">
+                GÎTE - LAC BEAUSOLEIL
+              </div>
+              <div class="planning__container__place">
+                <a href="https://goo.gl/maps/D3ivzpExS7251RiR8">Lieu-dit la Foncabalinque - 24140 Campsegret</a>
+                <a href=tel:0607763174> Tél : 06 07 76 31 74</a>
+                <p class="italic">2,5 km – 5 min en voiture</p>
+              </div>
+            </div>
+ 
+            <div class= "join__types__explain">
+              <div class= "join__types__explain__container salmon">
+                GÎTE - COTTAGE DE MONSIEUR BEAUPUY
+              </div>
+              <div class="planning__container__place">
+                <p>24140 Campsegret</p>
+                <a href="tel:0607763174">Tél : 06 07 76 31 74 (Attention, même num que le gîte du lac !)</a>
+                <p class="italic">3 km – 2 min en voiture</p>
+              </div>
+            </div>
+  
+            <div class= "join__types__explain">
+              <div class= "join__types__explain__container salmon">
+                GÎTE – LA ROQUE
+              </div>
+              <div class="planning__container__place">
+                <a href="https://goo.gl/maps/eYLeHtznFbfukLj28">Lieu-dit La Roque - 24140 Saint-Julien-De-Crempse</a>
+                <a href="tel:0662690631">Tél : 06 62 69 06 31 </a> / E-mail : <a href="mailto:alexnoir@outlook.fr">alexnoir@outlook.fr</a>                    </p>
+                <p class="italic">3,5 km – 6 min en voiture</p>
+              </div>
+            </div>
+
+            <div class= "join__types__explain">
+              <a class= "join__types__explain__container salmon" href="https://lalibertie.com/fr">
+                CHAMBRES D’HÔTES - LA LIBERTIE
+              </a>
+              <div class="planning__container__place">
+                <a href="https://goo.gl/maps/dogQ84oW9yjNoafH6">Lieu-dit La Libertie - 24140 Campsegret </a>
+                </p>
+                <a href="0553616645">Tel : 05 53 61 66 45</a>
+                <p class="italic">4 km – 5 min en voiture
+                </p>
+              </div>
+            </div>
+
+            <div class= "join__types__explain">
+              <a class= "join__types__explain__container salmon" href="https://les-rocailles.fr/">
+                CHAMBRES D’HÔTES – LES ROCAILLES
+              </a>
+              <div class="planning__container__place">
+                <a href="https://goo.gl/maps/6tfGaonSy7qL5RYJ6">N21 - 24520 Lamonzie-Montastruc </a>                   </p>
+                <a href="tel:06878611">Tél : 06 87 67 86 11</a>
+                <p class="italic">5 km – 6 min en voiture</p>
+              </div>
+            </div>
+   
+            <div class= "join__types__explain">
+              <a class= "join__types__explain__container salmon" href="https://www.airbnb.fr/rooms/9744758?s=51">
+                AIRBNB – LA MARTIGNE
+              </a>
+              <div class="planning__container__place">
+                <p>Marie-Laure Holguin – 24140 Saint Martin des Combes
+                </p>
+                <p> Tél :  <a href="tel:0553829729">05 53 82 97 29 </a> - <a href="tel:0140679138"> 01 40 67 91 38 </a> / E-mail : <a href="mailto:almar.holguin@live.fr">almar.holguin@live.fr</a>
+                </p>
+                <p class="italic">5 km – 8 min en voiture
+                </p>
+              </div>
+            </div>
+   
+              <div class= "join__types__explain">
+                <a class= "join__types__explain__container salmon" href="/ https://maisonlamaure.com/">
+                  CHAMBRES D’HÔTES – LE FRÊNE À LA MAURE
+                </a>
+                <div class="planning__container__place">
+                  <a href="https://g.page/maisonlamaure?share">Lieu-dit La Maure, Campsegret - 24140 Bergerac   </a>
+                  <p>Tél : <a href=tel:0674770253">06 74 77 02 53</a></p>
+                  <p class="italic">5 km – 7 min en voiture </p>
+                </div>
+              </div>
+
+
+              <div class= "join__types__explain">
+                <a class= "join__types__explain__container salmon" href="https://manoirdugrandvignoble.fr/
+                ">
+                  HÔTEL - MANOIR DU GRAND VIGNOBLE
+                </a>
+                <div class="planning__container__place">
+                  <a href="https://goo.gl/maps/JYca94VYZvE2MF3C6">Lieu-dit - 24140 Eyraud-Crempse-Maurens</a>
+                  </p>
+                  <p>Tel : <a href="tel:0553242318">05 53 24 23 18</a></p>
+                  <p class="italic">7 km – 10 min en voiture
+                  </p>
+                </div>
+              </div>
+  
+              <div class= "join__types__explain">
+                <div class= "join__types__explain__container salmon">
+                  HÔTEL – LE TROPICANA
+                </div>
+                <div class="planning__container__place">
+                  <a href="https://g.page/HotelLeTropicana?share">Les Trois Frères, Lieu-dit - 24140 Douville</a>
+                  <p>Tél : <a href=tel:0553829831>05 53 82 98 31</a></p>
+                  <p class="italic">11 km – 11 min en voiture                  </p>
+                </div>
+              </div>
+
+
+              <div class= "join__types__explain">
+                <a class= "join__types__explain__container salmon" class="https://www.laflambee.com/                ">
+                  HÔTEL – LA FLAMBÉE
+                </a>
+                <div class="planning__container__place">
+                  <a href="https://g.page/laflambeebergerac?share">49 Avenue Marceau Feyry - 24100 Bergerac</a>
+                  <p>Tél : <a href="tel:0553575233">05 53 57 52 33</a> </p>
+                  <p class="italic">11 km – 13 min en voiture
+                  </p>
+                </div>
+              </div>
+
+
+              <div class= "join__types__explain">
+                <a class= "join__types__explain__container salmon" href="https://www.bellevue-cottage.com"  >
+                   GÎTE - COTTAGE DOMAINE DE BELLEVUE
+                </a>
+                <div class="planning__container__place" href="">
+                  <a href="https://g.page/Maison-Hotes-Bergerac-Dordogne?share">1682 Chemin de Beynac - 24100 Lembras</a>
+                  <p>Tél : <a href="tel:0960511393">09 60 51 13 93</a></p>
+                  <p class="italic">11 km – 17 min en voiture
+                  </p>
+                </div>
+              </div>
+   
+              <div class= "join__types__explain">
+                <a class= "join__types__explain__container salmon" href="/ https://www.leclosdargenson.com/
+                ">
+                  CHAMBRES D’HÔTES – LE CLOS D'ARGENSON
+                </a>
+                <div class="planning__container__place">
+                  <a href="https://goo.gl/maps/2u4RZNkrWfDjcK5J9">99 Rue Neuve d'Argenson - 24100 Bergerac</a>
+                  <p>Tél : <a href="tel:0612905958">06 12 90 59 58</a> </p>
+                  <p class="italic">14 km – 16 min en voiture
+                  </p>
+                </div>
+              </div>
+
+
+              <div class= "join__types__explain">
+                <a class= "join__types__explain__container salmon" href="https://www.lesmerles.com/">
+                  HÔTEL – CHÂTEAU LES MERLES
+                </a>
+                <div class="planning__container__place">
+                  <a href="https://goo.gl/maps/HA5xEwGrasTUkMka8">3 Chemin des Merles - 24520 Mouleydier </a>
+                  <p>Tél : <a href="tel:0553631342">05 53 63 13 42</a> </p>
+                  <p class="italic">17 km – 18 min en voiture
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p> Plusieurs logements sont également disponible sur 
+          AirBnB à moins de 10 km… </p>
+    </section>
+
+     <!--Liste de mariage-->
+
+     <section class="list">
+      <h3 id="liste-mariage">Liste de mariage</h3>
+       <div class="img-liste"></div>
+       <button class="gift"> On veut des cadeaux ! </button>
+      </section>
+
+
+       <!--Footer-->
+
+      <footer>
+        <p>Garance et Maxime</p>
+        <p>Samedi 2 octobre 2021</P>
+        <a href="mailto:garanceplusmaxime@gmail.com"> garanceplusmaxime@gmail.com </a>
+      </footer>
+   </body>
+
+    <script>
+      (function () {
+      const second = 1000,
+      minute = second * 60,
+      hour = minute * 60,
+      day = hour * 24;
+
+    const weddingDay = "Oct 02, 2021 11:00:00";
+    const countDown = new Date(weddingDay).getTime();
+    x = setInterval(function() {
+
+      const now = new Date().getTime();
+      distance = countDown - now;
+
+        document.getElementById("days").innerText = Math.floor(distance / (day));
+        document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour));
+        document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute));
+        document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
+
+      //do something later when date is reached
+      if (distance < 0) {
+        let headline = document.getElementById("headline"),
+            countdown = document.getElementById("countdown"),
+            content = document.getElementById("content");
+
+        headline.innerText = "";
+        countdown.style.display = "none";
+        content.style.display = "block";
+        clearInterval(x);
+      }
+      //seconds
+    }, 1000)
+  }());
+  </script>
+
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Garance & Maxime</title>
+    <link href="./public/img/logo/+.png" rel="shortcut icon" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/27350ed8ab.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta property="og:title" content="Mariage Garance + Maxime">
+    <meta property="og:description" content="Mariage Garance + Maxime">
+    <meta property="og:image" href="./public/img/logo/+.png">
+    <meta property="og:url" content="https://garanceplusmaxime.fr/">
+    <meta name="twitter:card" content="Mariage Garance + Maxime">
+  </head>
+
+  <body>
+
+    <!-- Header -->
+
+   
+    <header class="site-header">
+      <input
+        type="checkbox"
+        id="top-nav"
+        name="top-nav"
+        aria-labelledby="top-nav-toggle"
+      />
+      <label for="top-nav" class="top-nav-label" id="top-nav-toggle">
+        <span class="open-close-menu">
+          <span class="open-menu">Ouvrir le menu</span>
+          <span class="close-menu">Fermer le menu</span>
+        </span>
+      </label>
+      <nav class="main-navigation">
+        <ul class="menu">
+          <li class="menu-item">
+            <a class="title-menu" href="./index.html" title="Accueil">
+              <i class="fas fa-home"></i>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a class="title-menu" href="./programme.html" title="Le programme">
+              Le programme
+            </a>
+          </li>
+          <li class="menu-item">
+            <a class="title-menu" href="./rsvp.html" title="rsvp">
+              RSVP
+            </a>
+          </li>
+          <li class="menu-item">
+            <a class="title-menu" href="./nous-rejoindre.html" title="Nous rejoindre">
+              Nous rejoindre
+            </a>
+          </li>
+          <li class="menu-item">
+            <a class="title-menu" href="./logements.html" title="Logements">
+             Logements
+            </a>
+          </li>
+          <li class="menu-item">
+            <a class="title-menu" href="./liste-mariage.html" title="Liste de Mariage">
+              Liste de Mariage
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    
+    <!-- Form contact -->
+
+
+      <div id="rsvp">
+        <h3 class="title"> Votre réponse </h3>
+        <div class="container form">
+          <div class="form-line">
+            <label for="Nom" class="label-form">Nom </label>
+            <input type="text" name="Nom" id="userName" class="form-control" required/>
+          </div>
+          <div class="form-line">
+            <label for="Prénom" class="label-form">Prénom</label>
+            <input type="text" name="Prénom" id="userFirstName" class="form-control" required />
+          </div>
+          <div class="form-line">
+            <label for="Email" class="label-form">Email</label>
+            <input type="Email" name="Email" id="userEmail" class="form-control" required/>
+          </div>
+          <div class="form-line">
+            <label for="Number" class="label-form">Nombre de personnes</label>
+            <input type="number" name="number" id="userNumber" class="form-control" required/>
+          </div>
+          <div class="label-form form-line participation-option-container">
+            Participation au mariage :
+            <div class="participation-options">
+              <div>
+                <label class="checkboxed for="Cocktail"> Cocktail
+                  <input type="checkbox" name="Cocktail" id="userIsComingToCocktail" class="participation-option"/>
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+              <div>
+                <label class="checkboxed for="Diner"> Dîner
+                  <input type="checkbox" name="Dîner" id="userIsComingToDiner" class="participation-option"/>
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+              <div>
+                <label class="checkboxed for="Brunch"> Brunch 
+                  <input type="checkbox" name="Brunch" id="userIsComingToBrunch" class="participation-option"/>
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="form-line">
+            <label for="Message" class="label-form">Petit mot (optionnel)</label>
+            <textarea type="Message" name="Message" id="userMessage" class="form-control"></textarea>
+          </div>
+        <button id="submit" class=""> <i class="far fa-paper-plane"></i> </button>
+        </div>
+        <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-analytics.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-firestore.js"></script>
+        <script src ="app.js"></script>
+
+        <script
+        src="https://kit.fontawesome.com/27350ed8ab.js"
+        crossorigin="anonymous"
+      ></script>
+
+      </div>
+
+       <!--Footer-->
+
+      <footer>
+        <p>Garance et Maxime</p>
+        <p>Samedi 2 octobre 2021</P>
+        <a href="mailto:garanceplusmaxime@gmail.com"> garanceplusmaxime@gmail.com </a>
+      </footer>
+   </body>
+
+    <script>
+      (function () {
+      const second = 1000,
+      minute = second * 60,
+      hour = minute * 60,
+      day = hour * 24;
+
+    const weddingDay = "Oct 02, 2021 11:00:00";
+    const countDown = new Date(weddingDay).getTime();
+    x = setInterval(function() {
+
+      const now = new Date().getTime();
+      distance = countDown - now;
+
+        document.getElementById("days").innerText = Math.floor(distance / (day));
+        document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour));
+        document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute));
+        document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
+
+      //do something later when date is reached
+      if (distance < 0) {
+        let headline = document.getElementById("headline"),
+            countdown = document.getElementById("countdown"),
+            content = document.getElementById("content");
+
+        headline.innerText = "";
+        countdown.style.display = "none";
+        content.style.display = "block";
+        clearInterval(x);
+      }
+      //seconds
+    }, 1000)
+  }());
+  </script>
+
+</html>

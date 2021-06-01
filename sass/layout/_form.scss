@@ -26,7 +26,6 @@ form:invalid{
     @media (max-width: 599px) {
         padding-left: 0;
         padding-bottom: 0;
-
         }
 }
 
@@ -36,7 +35,7 @@ form:invalid{
 }
 
 .form{
-    width: 40%;
+    width: 60%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -56,6 +55,11 @@ form:invalid{
     padding: 20px;
 }
 
+#submit{
+  font-size:0.7em;
+  margin-bottom: 150px;
+  margin-top: 40px;
+}
 //Checkboxes personalized
 
 /* Customize the label (the container) */
