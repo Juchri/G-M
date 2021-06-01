@@ -23,7 +23,7 @@ a {
 @media (max-width: 599px) {
   .parallax {
     background-size: contain;
-    min-height: 350px;
+    min-height: 450px;
     background-attachment: unset;
     padding-top: 0;
     background-position: bottom;
@@ -56,8 +56,8 @@ a {
   margin-right: auto;
   margin-bottom: 300px;
   margin-top: 100px;
+  width: auto;
 }
-
 .list {
   display: flex;
   flex-direction: column;
@@ -124,7 +124,8 @@ h2 {
 }
 @media (max-width: 599px) {
   h2 {
-    font-size: 1em;
+    font-size: 1.5em;
+    width: 100%;
   }
 }
 
@@ -136,7 +137,7 @@ h3 {
   font-weight: 100;
   background-attachment: fixed;
   padding-top: 20px;
-  margin: 20px;
+  margin: 50px;
 }
 @media (max-width: 599px) {
   h3 {
@@ -918,7 +919,7 @@ nav {
 .prog-img {
   background-image: url("/public/img/Photo M+G .JPG");
   min-height: 600px;
-  width: 70%;
+  width: 60%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -928,6 +929,11 @@ nav {
     width: 100%;
     min-height: 200px;
   }
+}
+
+.prog {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .prog-container {
@@ -986,6 +992,11 @@ nav {
     flex-direction: column;
   }
 }
+.planning__container > p {
+  padding: 0;
+  margin: 0;
+  color: #E1AB97;
+}
 .planning__container__place {
   color: #5D5D5D;
 }
@@ -1033,22 +1044,8 @@ nav {
   color: #E1AB97;
   font-size: 1em;
   width: 50px;
-}
-
-.article-1 {
-  background-image: url("https://web.static-rmg.be/if/c_crop,w_1000,h_666,x_0,y_0,g_center/c_fit,w_620,h_412/faf4c9f00a1e64b5a889c5f4f6b2584c.jpg");
-}
-
-.article-2 {
-  background-image: url("https://www.artcurial.com/sites/default/files/styles/840_width/public/lots-images/2017-08-31-14/2160_10399189_0.jpg?itok=-cBPWiEE");
-}
-
-.article-3 {
-  background-image: url("https://www.madmoizelle.com/wp-content/uploads/2014/01/downtonabbey-1.jpg");
-}
-
-.article-4 {
-  background-image: url("https://s3-eu-west-1.amazonaws.com/nedgis/public/images/products/suspension-bolla-transparent-o33cm-fontana-arte/gallery/bolla_harry-camilla_fontanaarte_m3540cr-v3567-2tr_luminaire_lighting_design_signed-15757-product.jpg?1432560229");
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .wedding-list {

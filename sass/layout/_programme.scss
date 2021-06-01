@@ -1,7 +1,7 @@
 .prog-img{
     background-image: url("/public/img/Photo\ M+G\ .JPG");
     min-height: 600px;
-    width:70%;
+    width:60%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -11,6 +11,10 @@
         }
   }
 
+.prog{
+    margin-left:auto;
+    margin-right:auto;
+}
 .prog-container{
     display:flex;
     flex-direction: row;
@@ -58,6 +62,11 @@
         @media (max-width: 599px) {
             flex-direction: column;
             }
+            >p{
+                padding:0;
+                margin:0;
+                color:$salmon;
+            }
         &__place{
             color: #5D5D5D;
             @media (max-width: 599px) {
@@ -102,4 +111,6 @@ height:800px;
 color:$salmon;
 font-size: 1em;
 width: 50px;
+margin-left:auto;
+margin-right: auto;
 }
