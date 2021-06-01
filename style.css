@@ -78,6 +78,13 @@ body {
   font-family: "Priyati", "Times", serif;
   font-size: 2em;
 }
+@media (max-width: 599px) {
+  body {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
 
 h1 {
   font-family: "Notera", sans-serif;
@@ -113,13 +120,6 @@ p {
   font-size: 1.3em;
   text-align: center;
   color: #5D5D5D;
-}
-@media (max-width: 599px) {
-  p {
-    width: 90%;
-    margin-right: auto;
-    margin-left: auto;
-  }
 }
 
 h2 {
