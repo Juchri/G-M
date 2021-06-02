@@ -73,12 +73,15 @@
             &__title{
                 display:flex;
                 flex-direction: row;
-                justify-content: space-around;
+                justify-content: center;
                 >.fas{
                     margin-top: auto;
                     margin-bottom:auto;
                     text-align:right;
                     font-size:1em;
+                    color:$salmon;
+                    font-size: 1em;
+                    padding:20px;
                 }
                 >h3{
                     margin:1px;
@@ -87,6 +90,8 @@
             }
         &__place{
             color: #5D5D5D;
+            display:flex;
+            flex-direction:column;
             @media (max-width: 599px) {
                 width: 100%;
                 }
@@ -123,12 +128,4 @@ height:800px;
 @media (max-width: 599px) {
     height:500px;
     }
-}
-
-.fas{
-color:$salmon;
-font-size: 1em;
-width: 50px;
-margin-left:auto;
-margin-right: auto;
 }

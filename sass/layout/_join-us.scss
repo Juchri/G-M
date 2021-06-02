@@ -29,6 +29,15 @@
                    margin-left: auto;
                    margin-right:auto;
                    padding: 10px;
+                   &__place{
+                       margin:0;
+                       padding:0;
+                       display:flex;
+                       flex-direction:column;
+                       >p{
+                           margin:0;
+                       }
+                   }
                 }
             }
         }

@@ -166,7 +166,7 @@ h3 {
   font-weight: 400;
 }
 
-#submit:hover {
+button:hover {
   background-color: #C5DDCE;
   cursor: pointer;
   color: #2D4D39;
@@ -982,19 +982,24 @@ footer > a {
 .planning__container__title {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
 }
 .planning__container__title > .fas {
   margin-top: auto;
   margin-bottom: auto;
   text-align: right;
   font-size: 1em;
+  color: #2D4D39;
+  font-size: 1em;
+  padding: 20px;
 }
 .planning__container__title > h3 {
   margin: 1px;
 }
 .planning__container__place {
   color: #5D5D5D;
+  display: flex;
+  flex-direction: column;
 }
 @media (max-width: 599px) {
   .planning__container__place {
@@ -1034,14 +1039,6 @@ footer > a {
   .height-planning {
     height: 500px;
   }
-}
-
-.fas {
-  color: #2D4D39;
-  font-size: 1em;
-  width: 50px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .wedding-list {
@@ -1278,6 +1275,15 @@ form:invalid {
   margin-left: auto;
   margin-right: auto;
   padding: 10px;
+}
+.join__types__explain__container > .fas__place {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+.join__types__explain__container > .fas__place > p {
+  margin: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
