@@ -11,7 +11,7 @@
 
 body {
     font-family: 'Priyati', 'Times', serif;
-    font-size: 1.5em;
+    font-size: 1.6em;
     @media (max-width: 599px) {
         width: 90%;
         margin-right:auto;
@@ -78,12 +78,7 @@ h3{
 }
 
 #submit{
-    background-color:$salmon;
     width:10%;
-    padding: 20px;
-    border:none;
-    margin : 10px 10px 10px auto;
-    border-radius: 1em;
     >i{
         color:white;
         font-size: 1.3em;
@@ -102,4 +97,12 @@ button:hover{
 //Chercher comment changer la couleur du i 
 button:hover.i{
     color:$colour-dark-grey;
+}
+
+button{
+    background-color:$salmon;
+    padding: 20px;
+    border:none;
+    margin : 10px 10px 10px auto;
+    border-radius: 1em;
 }
