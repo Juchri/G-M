@@ -51,27 +51,27 @@
             </a>
           </li>
           <li class="menu-item">
-            <a class="title-menu" href="./programme.html" title="Le programme">
+            <a class="title-menu" href="./pages/programme.html" title="Le programme">
               Programme
             </a>
           </li>
           <li class="menu-item">
-            <a class="title-menu" href="./rsvp.html" title="rsvp">
+            <a class="title-menu" href="./pages/rsvp.html" title="rsvp">
               RSVP
             </a>
           </li>
           <li class="menu-item">
-            <a class="title-menu" href="./nous-rejoindre.html" title="Nous rejoindre">
+            <a class="title-menu" href="./pages/nous-rejoindre.html" title="Nous rejoindre">
               Nous rejoindre
             </a>
           </li>
           <li class="menu-item">
-            <a class="title-menu" href="./logements.html" title="Logements">
+            <a class="title-menu" href="./pages/logements.html" title="Logements">
              Se loger
             </a>
           </li>
           <li class="menu-item">
-            <a class="title-menu" href="./liste-mariage.html" title="Liste de Mariage">
+            <a class="title-menu" href="./pages/liste-mariage.html" title="Liste de Mariage">
               Liste de Mariage
             </a>
           </li>
@@ -91,6 +91,8 @@
 
       <!-- Countdown -->
 
+      <script src ="./js/countdown.js"></script>
+
       <div id="countdown-index">
         <ul>
           <li><span id="days"></span>jours</li>
@@ -99,41 +101,6 @@
           <li><span id="seconds"></span>secondes</li>
         </ul>
       </div>
-    
-      <script>
-        (function () {
-        const second = 1000,
-        minute = second * 60,
-        hour = minute * 60,
-        day = hour * 24;
-  
-      const weddingDay = "Oct 02, 2021 11:00:00";
-      const countDown = new Date(weddingDay).getTime();
-      x = setInterval(function() {
-  
-        const now = new Date().getTime();
-        distance = countDown - now;
-  
-          document.getElementById("days").innerText = Math.floor(distance / (day));
-          document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour));
-          document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute));
-          document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
-  
-        //do something later when date is reached
-        if (distance < 0) {
-          let headline = document.getElementById("headline"),
-              countdown = document.getElementById("countdown"),
-              content = document.getElementById("content");
-  
-          headline.innerText = "";
-          countdown.style.display = "none";
-          content.style.display = "block";
-          clearInterval(x);
-        }
-        //seconds
-      }, 1000)
-    }());
-    </script>
 
        <!--Footer-->
 
