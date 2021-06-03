@@ -964,6 +964,12 @@ footer > a {
   padding-top: 20px;
   flex-direction: column;
   text-align: center;
+  margin-bottom: 50px;
+}
+@media (max-width: 599px) {
+  .planning {
+    margin-bottom: unset;
+  }
 }
 .planning__container {
   display: flex;
@@ -1031,6 +1037,7 @@ footer > a {
   font-size: 1em;
   line-height: 0.7;
   margin: 0;
+  padding: 10px;
 }
 @media (max-width: 599px) {
   .planning__container__place > p {
