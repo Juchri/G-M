@@ -96,7 +96,7 @@ h1 {
 }
 @media (max-width: 599px) {
   h1 {
-    font-size: 2em;
+    font-size: 3em;
   }
 }
 
@@ -248,6 +248,7 @@ button {
 @media (max-width: 599px) {
   #countdown-index {
     margin-top: 2rem;
+    width: 100%;
   }
 }
 #countdown-index > ul {
@@ -256,11 +257,6 @@ button {
   justify-content: space-around;
   font-variant-caps: small-caps;
   padding-left: 0;
-}
-@media (max-width: 599px) {
-  #countdown-index > ul {
-    flex-flow: row wrap;
-  }
 }
 #countdown-index > ul > li {
   display: flex;
