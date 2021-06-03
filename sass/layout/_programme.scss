@@ -49,6 +49,11 @@
     margin-left: auto;
 }
 
+section{
+    @media (max-width: 599px) {
+        margin-bottom: 50px;
+        }
+}
 .planning{
   display:flex;
   padding-top:20px;
@@ -61,6 +66,7 @@
         justify-content: space-evenly;
         @media (max-width: 599px) {
             flex-direction: column;
+            padding-bottom: 15px;
             }
             >p{
                 padding:0;
@@ -74,6 +80,9 @@
                 display:flex;
                 flex-direction: row;
                 justify-content: center;
+                @media (max-width: 599px) {
+                    justify-content: left;
+                    }
                 >.fas{
                     margin-top: auto;
                     margin-bottom:auto;
@@ -84,8 +93,12 @@
                     padding:20px;
                 }
                 >h3{
-                    margin:1px;
-
+                    margin: 1px 1px 20px 1px;
+                    @media (max-width: 599px) {
+                        font-size:1.5em;
+                        text-align: left;
+                        padding-left:20px;
+                        }
                 }
             }
         &__place{
@@ -101,8 +114,11 @@
             >p{
                 font-size: 1em ;
                 line-height: 0.7;
+                margin:0;
                 @media (max-width: 599px) {
                     line-height: 1.2;
+                    text-align: left;
+                    padding-left:20px;
                     }
                 }
             &__lines{
