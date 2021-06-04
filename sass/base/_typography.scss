@@ -32,13 +32,13 @@ h1 {
 }
 .names{
     padding-top: 80px;
+    color:$salmon;
     @media (max-width: 599px) {
         padding-top: 0;
         }
 }
 
 h1:hover {
-    color:$salmon;
     font-weight: 200;
     transition: 0.3s;
 }
