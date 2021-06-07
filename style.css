@@ -1288,9 +1288,6 @@ form:invalid {
     flex-wrap: no-wrap;
   }
 }
-.join__types__explain {
-  width: 50%;
-}
 @media (max-width: 599px) {
   .join__types__explain {
     width: 100%;
@@ -1303,10 +1300,17 @@ form:invalid {
   text-align: center;
   padding: 20px;
 }
+.join__types__explain__container > p {
+  margin-bottom: 20px;
+  margin-top: 1px;
+  font-size: 1.3em;
+  color: #4D5043;
+}
 .join__types__explain__container > .fas {
   margin-left: auto;
   margin-right: auto;
   padding: 10px;
+  color: #4D5043;
 }
 .join__types__explain__container > .fas__place {
   margin: 0;
@@ -1314,7 +1318,16 @@ form:invalid {
   display: flex;
   flex-direction: column;
 }
-.join__types__explain__container > .fas__place > p {
+
+.fifty {
+  width: 50%;
+}
+
+.thirty {
+  width: 33%;
+}
+
+p {
   margin: 0;
 }
 

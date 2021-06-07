@@ -15,7 +15,6 @@
             flex-wrap: no-wrap;
             }
         &__explain {
-            width: 50%;
             @media (max-width: 599px) {
                 width: 100%;
                 }
@@ -25,21 +24,37 @@
                 justify-content: space-between;
                 text-align:center;
                 padding:20px;
+                >p {
+                    margin-bottom: 20px;
+                    margin-top: 1px;
+                    font-size: 1.3em;
+                    color:$salmon;
+                }
                 >.fas{
                    margin-left: auto;
                    margin-right:auto;
                    padding: 10px;
+                   color:$salmon;
                    &__place{
                        margin:0;
                        padding:0;
                        display:flex;
                        flex-direction:column;
-                       >p{
-                           margin:0;
-                       }
                    }
                 }
             }
         }
     }
+}
+
+.fifty {
+    width: 50%;
+}
+
+.thirty {
+    width: 33%;
+}
+
+p {
+    margin:0;
 }
