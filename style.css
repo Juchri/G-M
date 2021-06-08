@@ -58,12 +58,19 @@ a {
   padding: 10px 20px 10px 20px;
   margin-left: auto;
   margin-right: auto;
-  width: 10%;
   height: 20px;
   position: absolute;
   left: 45%;
   top: 20%;
 }
+@media (max-width: 599px) {
+  .gift {
+    position: absolute;
+    left: 30%;
+    top: 11%;
+  }
+}
+
 .list {
   display: flex;
   flex-direction: column;
@@ -1289,17 +1296,17 @@ form:invalid {
     flex-wrap: no-wrap;
   }
 }
-@media (max-width: 599px) {
-  .join__types__explain {
-    width: 100%;
-  }
-}
 .join__types__explain__container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   text-align: center;
   padding: 20px;
+}
+@media (max-width: 599px) {
+  .join__types__explain__container {
+    padding: 20px 0 20px 0;
+  }
 }
 .join__types__explain__container > p {
   margin-bottom: 20px;
@@ -1319,13 +1326,26 @@ form:invalid {
   display: flex;
   flex-direction: column;
 }
+.join__types__explain__container > .fas__place > p {
+  text-align: center;
+}
 
 .fifty {
   width: 50%;
 }
+@media (max-width: 599px) {
+  .fifty {
+    width: 100%;
+  }
+}
 
 .thirty {
   width: 33%;
+}
+@media (max-width: 599px) {
+  .thirty {
+    width: 100%;
+  }
 }
 
 p {
