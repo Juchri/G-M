@@ -915,6 +915,7 @@ footer > a {
 .prog__child {
   margin-right: auto;
   margin-left: auto;
+  padding-bottom: 40px;
 }
 
 @media (max-width: 599px) {
@@ -928,7 +929,6 @@ footer > a {
   padding-top: 20px;
   flex-direction: column;
   text-align: center;
-  margin-bottom: 50px;
 }
 @media (max-width: 599px) {
   .planning {
