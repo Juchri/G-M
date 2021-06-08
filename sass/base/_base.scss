@@ -16,7 +16,7 @@ a {
     min-height: 1500px;
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
-    background-position: 159px 55%;
+    background-position: 7em 55%;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -26,6 +26,7 @@ a {
       background-attachment: unset;
       padding-top:0;
       background-position: bottom;
+      background-position: 1.5em 117%;
       }
   }
 
