@@ -32,53 +32,6 @@ a {
   }
 }
 
-.img-liste {
-  background-image: url("/public/img/M+G Bateau.JPG");
-  min-height: 500px;
-  width: 80%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-right: auto;
-  margin-left: auto;
-  margin-bottom: 50px;
-  margin-top: 50px;
-}
-@media (max-width: 599px) {
-  .img-liste {
-    width: 100%;
-    min-height: 200px;
-  }
-}
-
-.gift {
-  color: white;
-  text-align: center;
-  font-weight: 500;
-  padding: 10px 20px 10px 20px;
-  margin-left: auto;
-  margin-right: auto;
-  height: 20px;
-  position: absolute;
-  left: 45%;
-  top: 20%;
-}
-@media (max-width: 599px) {
-  .gift {
-    position: absolute;
-    left: 30%;
-    top: 11%;
-  }
-}
-
-.list {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  width: auto;
-}
-
 @font-face {
   font-family: "Notera";
   src: url("./public/font/Notera_PersonalUseOnly.ttf");
@@ -1081,67 +1034,51 @@ footer > a {
   }
 }
 
-.wedding-list {
-  min-height: 200px;
-  padding: 20px;
+.list {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
 }
-@media (max-width: 599px) {
-  .wedding-list {
-    flex-direction: column;
-  }
-}
-.wedding-list__article {
-  display: flex;
-  flex-direction: column;
-  background-color: #F8ECE7;
-  border-radius: 3ex;
-  width: 23%;
-}
-@media (max-width: 599px) {
-  .wedding-list__article {
-    width: 90%;
-    margin: 5%;
-  }
-}
-.wedding-list__article__photo {
-  border-radius: 3ex 3ex 0 0;
-  margin-bottom: 10px;
-  min-height: 300px;
+
+.img-liste {
+  background-image: url("/public/img/M+G Bateau.JPG");
+  min-height: 500px;
+  width: 80%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 50px;
+  margin-top: 50px;
 }
 @media (max-width: 599px) {
-  .wedding-list__article__photo {
-    height: 200px;
+  .img-liste {
+    width: 100%;
+    min-height: 200px;
   }
 }
-.wedding-list__article__text {
+
+.gift {
+  color: white;
+  text-align: center;
+  font-weight: 500;
+  padding: 10px 20px 10px 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 7%;
+  height: 20px;
+}
+@media (max-width: 599px) {
+  .gift {
+    margin-top: 9%;
+  }
+}
+
+.list {
   display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  padding: 10px;
-}
-.wedding-list__article__text__title {
-  font-weight: 700;
-  width: 100%;
-}
-.wedding-list__article__text__brand {
-  color: #5D5D5D;
-  width: 70%;
-  padding-top: 10px;
-  margin-top: auto;
-  padding-bottom: 10px;
-}
-.wedding-list__article__text__price {
-  color: grey;
-  width: 30%;
-  text-align: right;
-  margin-top: auto;
-  padding-bottom: 10px;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: auto;
 }
 
 form:invalid {

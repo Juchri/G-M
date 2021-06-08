@@ -1,58 +1,43 @@
-
-
-  .wedding-list{
-    min-height: 200px;
-    padding: 20px;
+.list{
     display:flex;
-    flex-direction: row;
-    justify-content: space-between;
-    @media (max-width: 599px) {
-        flex-direction: column;
-        }
-      &__article{
-        display:flex;
-        flex-direction:column;
-        background-color: #F8ECE7;
-        border-radius: 3ex;
-        width: 23%;
-        @media (max-width: 599px) {
-            width: 90%;
-            margin: 5%;
-            }
-        &__photo{
-        border-radius: 3ex 3ex 0 0;
-        margin-bottom: 10px;
-        min-height: 300px;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-            @media (max-width: 599px) {
-            height: 200px;
-            }
-        }
-        &__text{
-            display:flex;
-            flex-flow: row wrap;
-            justify-content: space-between;
-            padding:10px;
-            &__title{
-                font-weight: 700;
-                width:100%;
-            }
-            &__brand{
-                color: $colour-dark-grey;
-                width:70%;
-                padding-top: 10px;
-                margin-top: auto;
-                padding-bottom: 10px;
-            }
-            &__price{
-                color:grey;
-                width:30%;
-                text-align: right;
-                margin-top: auto;
-                padding-bottom: 10px;
-            }
-        }
-    }
 }
+
+
+.img-liste{
+    background-image: url("/public/img/M+G\ Bateau.JPG");
+    min-height: 500px;
+    width: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right:auto;
+    margin-left:auto;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    @media (max-width: 599px) {
+        width:100%;
+        min-height: 200px;
+        }
+  }
+
+  .gift{
+    color: white;
+    text-align: center;
+    font-weight: 500;
+    padding: 10px 20px 10px 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 7%;
+    height: 20px;
+    @media (max-width: 599px) {
+        margin-top: 9%;
+        }
+  }
+
+  .list{
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  text-align:center;
+  width: auto;
+  }
