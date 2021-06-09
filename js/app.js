@@ -57,6 +57,7 @@ db.doc()
   })
   .then(function(){
     console.log("Data Saved");
+    alert("Merci de votre réponse ! Elle est envoyée à Garance et Maxime !");
   })
   .catch (function(error) {
     console.log(error);
