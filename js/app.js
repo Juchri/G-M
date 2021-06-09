@@ -34,6 +34,7 @@ myHour = new Date().getHours();
 myMinute = new Date().getMinutes();
 mySecond = new Date().getSeconds();
 
+now= new Date().getTime();
 
 const db = firestore.collection("contactData");
 
@@ -52,6 +53,7 @@ submitBtn.addEventListener('click', function (){
 db.doc()
   .set({
 
+    dateParse: now,
     day : myDay,
     month: myMonth,
     hour: myHour,
