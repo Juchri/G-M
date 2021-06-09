@@ -28,6 +28,11 @@ let userIsComingToDiner = document.querySelector('#userIsComingToDiner');
 let userIsComingToBrunch = document.querySelector('#userIsComingToBrunch');
 let userMessage = document.querySelector('#userMessage');
 
+myDay = new Date().getDate();
+myMonth = new Date().getMonth();
+myHour = new Date().getHours();
+myMinute = new Date().getMinutes();
+mySecond = new Date().getSeconds();
 
 
 const db = firestore.collection("contactData");
@@ -46,6 +51,12 @@ submitBtn.addEventListener('click', function (){
 
 db.doc()
   .set({
+
+    day : myDay,
+    month: myMonth,
+    hour: myHour,
+    minut: myMinute,
+    second: mySecond,
     name: userNameInput,
     firstName: userFirstNameInput,
     email: userEmailInput,
