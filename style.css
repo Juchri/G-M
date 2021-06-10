@@ -1061,15 +1061,28 @@ footer > a {
   text-align: center;
   font-weight: 500;
   padding: 10px 20px 10px 20px;
+  background-color: #4D5043;
+  border-radius: 1em;
+  display: flex;
+  width: 5.5em;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 7%;
-  height: 20px;
+  margin-top: 8%;
 }
 @media (max-width: 599px) {
   .gift {
     margin-top: 9%;
   }
+}
+
+.gift:hover {
+  background-color: #C3CBC3;
+  cursor: pointer;
+  color: #4D5043;
+}
+
+.gift:hover.i {
+  color: #5D5D5D;
 }
 
 .list {
