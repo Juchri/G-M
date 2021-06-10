@@ -28,13 +28,7 @@ let userIsComingToDiner = document.querySelector('#userIsComingToDiner');
 let userIsComingToBrunch = document.querySelector('#userIsComingToBrunch');
 let userMessage = document.querySelector('#userMessage');
 
-myDay = new Date().getDate();
-myMonth = new Date().getMonth();
-myHour = new Date().getHours();
-myMinute = new Date().getMinutes();
-mySecond = new Date().getSeconds();
-
-now= new Date().getTime();
+now= new Date().toString();
 
 const db = firestore.collection("contactData");
 
@@ -53,12 +47,7 @@ submitBtn.addEventListener('click', function (){
 db.doc()
   .set({
 
-    dateParse: now,
-    day : myDay,
-    month: myMonth,
-    hour: myHour,
-    minut: myMinute,
-    second: mySecond,
+    date: now,
     name: userNameInput,
     firstName: userFirstNameInput,
     email: userEmailInput,
