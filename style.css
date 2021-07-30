@@ -145,6 +145,14 @@ button {
   border-radius: 1em;
 }
 
+.fa-bus:before {
+  color: white;
+  background-color: #C3CBC3;
+  border-radius: 50%;
+  padding: 10px;
+  margin: 15px;
+}
+
 .favourite {
   border: none;
   background: none;
@@ -1230,6 +1238,7 @@ form:invalid {
 .join__line {
   font-size: 1.5em;
   text-align: center;
+  padding-top: 20px;
 }
 .join__types {
   font-size: 1em;
@@ -1299,6 +1308,39 @@ form:invalid {
 
 p {
   margin: 0;
+}
+
+.navette {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navette-hotel {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.airbnb-line {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.logements > p {
+  text-align: center !important;
+}
+
+.planning__container__place > p {
+  text-align: center !important;
 }
 
 /*# sourceMappingURL=style.css.map */

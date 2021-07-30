@@ -2,6 +2,7 @@
     &__line{
         font-size: 1.5em;
         text-align: center;
+        padding-top: 20px;
     }
     &__types{
         font-size: 1em;
@@ -66,4 +67,38 @@
 
 p {
     margin:0;
+}
+
+//Hôtels 
+
+.navette{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navette-hotel{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.airbnb-line{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    margin-bottom : 20px;
+    align-items: center;
+}
+
+.logements > p {
+    text-align: center !important;
+}
+
+.planning__container__place >p {
+    text-align: center !important;
 }
